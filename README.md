@@ -1,1 +1,2 @@
-# time-series
+# Estudos sobre séries temporais
+
