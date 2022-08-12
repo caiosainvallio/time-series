@@ -976,3 +976,1751 @@
 2022-08-12 16:38:55,922:INFO:ExponentialSmoothing(seasonal='mul', sp=12, trend='add')
 2022-08-12 16:38:55,922:INFO:finalize_model() succesfully completed......................................
 2022-08-12 16:38:56,146:WARNING:predict_model >> Prediction Indices do not match test indices. Metrics will not be displayed.
+2022-08-12 16:46:33,113:INFO:gpu_param set to False
+2022-08-12 16:46:33,118:WARNING:Couldn't import sktime.forecasting.fbprophet
+2022-08-12 16:46:33,126:WARNING:Couldn't import sktime.forecasting.fbprophet
+2022-08-12 16:48:38,327:INFO:gpu_param set to False
+2022-08-12 16:48:38,330:WARNING:Couldn't import sktime.forecasting.fbprophet
+2022-08-12 16:48:38,340:WARNING:Couldn't import sktime.forecasting.fbprophet
+2022-08-12 16:48:47,835:INFO:gpu_param set to False
+2022-08-12 16:48:47,838:WARNING:Couldn't import sktime.forecasting.fbprophet
+2022-08-12 16:48:47,847:WARNING:Couldn't import sktime.forecasting.fbprophet
+2022-08-12 16:49:39,769:INFO:Preparing display monitor
+2022-08-12 16:50:43,758:INFO:PyCaret TSForecastingExperiment
+2022-08-12 16:50:43,758:INFO:Logging name: ts-default-name
+2022-08-12 16:50:43,758:INFO:ML Usecase: MLUsecase.TIME_SERIES
+2022-08-12 16:50:43,759:INFO:version 3.0.0
+2022-08-12 16:50:43,759:INFO:Initializing setup()
+2022-08-12 16:50:43,759:INFO:self.USI: 6278
+2022-08-12 16:50:43,759:INFO:self.variable_keys: {'_gpu_n_jobs_param', '_all_metrics', 'y_test', 'fold_groups_param_full', 'seasonal_period', 'pipeline', 'fold_param', 'master_model_container', 'log_plots_param', 'idx', 'exp_name_log', 'X_test_transformed', 'X_transformed', 'primary_sp_to_use', 'exp_id', 'fh', 'variable_keys', 'X_test', 'y_train', 'fold_generator', 'gpu_param', 'memory', 'USI', 'experiment__', '_available_plots', 'exogenous_present', 'all_sp_values', 'X', '_ml_usecase', 'seasonality_present', 'y', 'html_param', 'X_train', 'display_container', 'enforce_pi', 'y_train_transformed', '_all_models_internal', 'y_test_transformed', 'y_transformed', 'n_jobs_param', 'X_train_transformed', 'data', 'index_type', 'logging_param', 'enforce_exogenous', 'approach_type', '_all_models', 'seed', 'strictly_positive'}
+2022-08-12 16:50:43,760:INFO:Checking environment
+2022-08-12 16:50:43,760:INFO:python_version: 3.9.12
+2022-08-12 16:50:43,760:INFO:python_build: ('main', 'Jun  1 2022 11:38:51')
+2022-08-12 16:50:43,760:INFO:machine: x86_64
+2022-08-12 16:50:43,760:INFO:platform: Linux-5.15.0-46-generic-x86_64-with-glibc2.31
+2022-08-12 16:50:43,760:INFO:Memory: svmem(total=118156464128, available=112179429376, percent=5.1, used=4826546176, free=109214502912, active=1866940416, inactive=6231257088, buffers=387768320, cached=3727646720, shared=6279168, slab=527106048)
+2022-08-12 16:50:43,762:INFO:Physical Core: 12
+2022-08-12 16:50:43,762:INFO:Logical Core: 24
+2022-08-12 16:50:43,762:INFO:Checking libraries
+2022-08-12 16:50:43,762:INFO:pd==1.4.2
+2022-08-12 16:50:43,762:INFO:numpy==1.23.1
+2022-08-12 16:50:43,762:INFO:sklearn==0.23.2
+2022-08-12 16:50:43,785:INFO:lightgbm==3.3.2
+2022-08-12 16:50:43,876:INFO:xgboost==1.6.1
+2022-08-12 16:50:43,892:INFO:catboost==1.0.6
+2022-08-12 16:50:44,156:INFO:mlflow==1.26.1
+2022-08-12 16:50:44,158:INFO:Set Forecast Horizon.
+2022-08-12 16:50:44,158:INFO:Set up Train-Test Splits.
+2022-08-12 16:50:44,166:INFO:Preparing preprocessing pipeline...
+2022-08-12 16:50:44,174:INFO:Finished creating preprocessing pipeline.
+2022-08-12 16:50:44,178:INFO:Pipeline: PyCaretForecastingPipeline(steps=[('forecaster',
+                                   TransformedTargetForecaster(steps=[('model',
+                                                                       DummyForecaster())]))])
+2022-08-12 16:50:44,178:INFO:Set up Seasonal Period.
+2022-08-12 16:50:44,180:INFO:Set up whether Multiplicative components allowed.
+2022-08-12 16:50:44,216:INFO:Creating final display dataframe.
+2022-08-12 16:50:44,223:INFO:Setup Display Container:                     Description                         Value
+0                    session_id                           123
+1                        Target  Number of airline passengers
+2                      Approach                    Univariate
+3           Exogenous Variables                   Not Present
+4                    Data shape                      (144, 1)
+5              Train data shape                      (141, 1)
+6               Test data shape                        (3, 1)
+7                Fold Generator       ExpandingWindowSplitter
+8                   Fold Number                             5
+9   Enforce Prediction Interval                         False
+10    Seasonal Period(s) Tested                            12
+11          Seasonality Present                          True
+12       Seasonalities Detected                          [12]
+13          Primary Seasonality                            12
+14     Target Strictly Positive                          True
+15           Target White Noise                            No
+16                Recommended d                             1
+17       Recommended Seasonal D                             1
+18               Missing Values                             0
+19                   Preprocess                          True
+20                     CPU Jobs                            -1
+21                      Use GPU                         False
+22               Log Experiment                         False
+23              Experiment Name               ts-default-name
+24                          USI                          6278
+2022-08-12 16:50:44,223:INFO:Preparing display monitor
+2022-08-12 16:50:44,262:INFO:setup() successfully completed in 0.5s...............
+2022-08-12 16:50:50,699:INFO:gpu_param set to False
+2022-08-12 16:51:17,765:INFO:Initializing compare_models()
+2022-08-12 16:51:17,766:INFO:compare_models(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, include=None, fold=None, round=4, cross_validation=True, sort=SMAPE, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, display=None, exclude=None)
+2022-08-12 16:51:17,766:INFO:Checking exceptions
+2022-08-12 16:51:17,768:INFO:Preparing display monitor
+2022-08-12 16:51:17,769:INFO:Preparing display monitor
+2022-08-12 16:51:17,805:INFO:Initializing Naive Forecaster
+2022-08-12 16:51:17,805:INFO:Total runtime is 3.6915143330891925e-06 minutes
+2022-08-12 16:51:17,814:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:51:17,814:INFO:Initializing create_model()
+2022-08-12 16:51:17,815:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=naive, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:51:17,815:INFO:Checking exceptions
+2022-08-12 16:51:17,817:INFO:Importing libraries
+2022-08-12 16:51:17,817:INFO:Copying training dataset
+2022-08-12 16:51:17,820:INFO:Defining folds
+2022-08-12 16:51:17,820:INFO:Declaring metric variables
+2022-08-12 16:51:17,828:INFO:Importing untrained model
+2022-08-12 16:51:17,837:INFO:Naive Forecaster Imported successfully
+2022-08-12 16:51:17,854:INFO:Starting cross validation
+2022-08-12 16:51:17,855:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:51:20,702:INFO:Calculating mean and std
+2022-08-12 16:51:20,705:INFO:Creating metrics dataframe
+2022-08-12 16:51:20,856:INFO:Uploading results into container
+2022-08-12 16:51:20,856:INFO:Uploading model into container now
+2022-08-12 16:51:20,856:INFO:master_model_container: 1
+2022-08-12 16:51:20,857:INFO:display_container: 2
+2022-08-12 16:51:20,857:INFO:NaiveForecaster()
+2022-08-12 16:51:20,857:INFO:create_model() successfully completed......................................
+2022-08-12 16:51:21,062:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:51:21,062:INFO:Creating metrics dataframe
+2022-08-12 16:51:21,094:INFO:Initializing Grand Means Forecaster
+2022-08-12 16:51:21,094:INFO:Total runtime is 0.05481674671173096 minutes
+2022-08-12 16:51:21,103:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:51:21,104:INFO:Initializing create_model()
+2022-08-12 16:51:21,104:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=grand_means, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:51:21,104:INFO:Checking exceptions
+2022-08-12 16:51:21,106:INFO:Importing libraries
+2022-08-12 16:51:21,106:INFO:Copying training dataset
+2022-08-12 16:51:21,111:INFO:Defining folds
+2022-08-12 16:51:21,111:INFO:Declaring metric variables
+2022-08-12 16:51:21,120:INFO:Importing untrained model
+2022-08-12 16:51:21,128:INFO:Grand Means Forecaster Imported successfully
+2022-08-12 16:51:21,144:INFO:Starting cross validation
+2022-08-12 16:51:21,145:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:51:23,043:INFO:Calculating mean and std
+2022-08-12 16:51:23,046:INFO:Creating metrics dataframe
+2022-08-12 16:51:23,121:INFO:Uploading results into container
+2022-08-12 16:51:23,121:INFO:Uploading model into container now
+2022-08-12 16:51:23,121:INFO:master_model_container: 2
+2022-08-12 16:51:23,121:INFO:display_container: 2
+2022-08-12 16:51:23,121:INFO:NaiveForecaster(strategy='mean')
+2022-08-12 16:51:23,122:INFO:create_model() successfully completed......................................
+2022-08-12 16:51:23,312:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:51:23,312:INFO:Creating metrics dataframe
+2022-08-12 16:51:23,337:INFO:Initializing Seasonal Naive Forecaster
+2022-08-12 16:51:23,337:INFO:Total runtime is 0.09220300515492758 minutes
+2022-08-12 16:51:23,346:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:51:23,346:INFO:Initializing create_model()
+2022-08-12 16:51:23,346:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=snaive, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:51:23,346:INFO:Checking exceptions
+2022-08-12 16:51:23,348:INFO:Importing libraries
+2022-08-12 16:51:23,348:INFO:Copying training dataset
+2022-08-12 16:51:23,351:INFO:Defining folds
+2022-08-12 16:51:23,351:INFO:Declaring metric variables
+2022-08-12 16:51:23,359:INFO:Importing untrained model
+2022-08-12 16:51:23,367:INFO:Seasonal Naive Forecaster Imported successfully
+2022-08-12 16:51:23,384:INFO:Starting cross validation
+2022-08-12 16:51:23,385:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:51:25,246:INFO:Calculating mean and std
+2022-08-12 16:51:25,248:INFO:Creating metrics dataframe
+2022-08-12 16:51:25,278:INFO:Uploading results into container
+2022-08-12 16:51:25,278:INFO:Uploading model into container now
+2022-08-12 16:51:25,279:INFO:master_model_container: 3
+2022-08-12 16:51:25,279:INFO:display_container: 2
+2022-08-12 16:51:25,279:INFO:NaiveForecaster(sp=12)
+2022-08-12 16:51:25,279:INFO:create_model() successfully completed......................................
+2022-08-12 16:51:25,469:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:51:25,469:INFO:Creating metrics dataframe
+2022-08-12 16:51:25,495:INFO:Initializing Polynomial Trend Forecaster
+2022-08-12 16:51:25,496:INFO:Total runtime is 0.12817588647206624 minutes
+2022-08-12 16:51:25,506:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:51:25,506:INFO:Initializing create_model()
+2022-08-12 16:51:25,506:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=polytrend, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:51:25,506:INFO:Checking exceptions
+2022-08-12 16:51:25,508:INFO:Importing libraries
+2022-08-12 16:51:25,508:INFO:Copying training dataset
+2022-08-12 16:51:25,512:INFO:Defining folds
+2022-08-12 16:51:25,512:INFO:Declaring metric variables
+2022-08-12 16:51:25,520:INFO:Importing untrained model
+2022-08-12 16:51:25,527:INFO:Polynomial Trend Forecaster Imported successfully
+2022-08-12 16:51:25,543:INFO:Starting cross validation
+2022-08-12 16:51:25,544:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:51:27,393:INFO:Calculating mean and std
+2022-08-12 16:51:27,394:INFO:Creating metrics dataframe
+2022-08-12 16:51:27,451:INFO:Uploading results into container
+2022-08-12 16:51:27,452:INFO:Uploading model into container now
+2022-08-12 16:51:27,452:INFO:master_model_container: 4
+2022-08-12 16:51:27,452:INFO:display_container: 2
+2022-08-12 16:51:27,452:INFO:PolynomialTrendForecaster()
+2022-08-12 16:51:27,452:INFO:create_model() successfully completed......................................
+2022-08-12 16:51:27,641:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:51:27,642:INFO:Creating metrics dataframe
+2022-08-12 16:51:27,669:INFO:Initializing ARIMA
+2022-08-12 16:51:27,669:INFO:Total runtime is 0.1643985946973165 minutes
+2022-08-12 16:51:27,677:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:51:27,678:INFO:Initializing create_model()
+2022-08-12 16:51:27,678:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=arima, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:51:27,678:INFO:Checking exceptions
+2022-08-12 16:51:27,680:INFO:Importing libraries
+2022-08-12 16:51:27,680:INFO:Copying training dataset
+2022-08-12 16:51:27,684:INFO:Defining folds
+2022-08-12 16:51:27,684:INFO:Declaring metric variables
+2022-08-12 16:51:27,693:INFO:Importing untrained model
+2022-08-12 16:51:27,703:INFO:ARIMA Imported successfully
+2022-08-12 16:51:27,720:INFO:Starting cross validation
+2022-08-12 16:51:27,720:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:51:30,049:INFO:Calculating mean and std
+2022-08-12 16:51:30,051:INFO:Creating metrics dataframe
+2022-08-12 16:51:30,081:INFO:Uploading results into container
+2022-08-12 16:51:30,081:INFO:Uploading model into container now
+2022-08-12 16:51:30,081:INFO:master_model_container: 5
+2022-08-12 16:51:30,081:INFO:display_container: 2
+2022-08-12 16:51:30,081:INFO:ARIMA(seasonal_order=(0, 1, 0, 12))
+2022-08-12 16:51:30,081:INFO:create_model() successfully completed......................................
+2022-08-12 16:51:30,279:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:51:30,279:INFO:Creating metrics dataframe
+2022-08-12 16:51:30,316:INFO:Initializing Auto ARIMA
+2022-08-12 16:51:30,317:INFO:Total runtime is 0.2085240364074707 minutes
+2022-08-12 16:51:30,326:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:51:30,326:INFO:Initializing create_model()
+2022-08-12 16:51:30,326:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=auto_arima, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:51:30,326:INFO:Checking exceptions
+2022-08-12 16:51:30,328:INFO:Importing libraries
+2022-08-12 16:51:30,328:INFO:Copying training dataset
+2022-08-12 16:51:30,332:INFO:Defining folds
+2022-08-12 16:51:30,332:INFO:Declaring metric variables
+2022-08-12 16:51:30,341:INFO:Importing untrained model
+2022-08-12 16:51:30,350:INFO:Auto ARIMA Imported successfully
+2022-08-12 16:51:30,369:INFO:Starting cross validation
+2022-08-12 16:51:30,369:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:17,565:INFO:Calculating mean and std
+2022-08-12 16:53:17,567:INFO:Creating metrics dataframe
+2022-08-12 16:53:17,598:INFO:Uploading results into container
+2022-08-12 16:53:17,598:INFO:Uploading model into container now
+2022-08-12 16:53:17,599:INFO:master_model_container: 6
+2022-08-12 16:53:17,599:INFO:display_container: 2
+2022-08-12 16:53:17,599:INFO:AutoARIMA(random_state=123, sp=12, suppress_warnings=True)
+2022-08-12 16:53:17,599:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:17,782:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:17,782:INFO:Creating metrics dataframe
+2022-08-12 16:53:17,809:INFO:Initializing Exponential Smoothing
+2022-08-12 16:53:17,810:INFO:Total runtime is 2.000076385339101 minutes
+2022-08-12 16:53:17,818:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:17,818:INFO:Initializing create_model()
+2022-08-12 16:53:17,818:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=exp_smooth, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:17,818:INFO:Checking exceptions
+2022-08-12 16:53:17,820:INFO:Importing libraries
+2022-08-12 16:53:17,820:INFO:Copying training dataset
+2022-08-12 16:53:17,823:INFO:Defining folds
+2022-08-12 16:53:17,824:INFO:Declaring metric variables
+2022-08-12 16:53:17,832:INFO:Importing untrained model
+2022-08-12 16:53:17,840:INFO:Exponential Smoothing Imported successfully
+2022-08-12 16:53:17,857:INFO:Starting cross validation
+2022-08-12 16:53:17,858:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:18,137:INFO:Calculating mean and std
+2022-08-12 16:53:18,139:INFO:Creating metrics dataframe
+2022-08-12 16:53:18,168:INFO:Uploading results into container
+2022-08-12 16:53:18,169:INFO:Uploading model into container now
+2022-08-12 16:53:18,169:INFO:master_model_container: 7
+2022-08-12 16:53:18,169:INFO:display_container: 2
+2022-08-12 16:53:18,169:INFO:ExponentialSmoothing(seasonal='mul', sp=12, trend='add')
+2022-08-12 16:53:18,169:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:18,361:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:18,362:INFO:Creating metrics dataframe
+2022-08-12 16:53:18,390:INFO:Initializing Croston
+2022-08-12 16:53:18,390:INFO:Total runtime is 2.0097543319066364 minutes
+2022-08-12 16:53:18,399:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:18,399:INFO:Initializing create_model()
+2022-08-12 16:53:18,399:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=croston, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:18,399:INFO:Checking exceptions
+2022-08-12 16:53:18,401:INFO:Importing libraries
+2022-08-12 16:53:18,401:INFO:Copying training dataset
+2022-08-12 16:53:18,404:INFO:Defining folds
+2022-08-12 16:53:18,404:INFO:Declaring metric variables
+2022-08-12 16:53:18,412:INFO:Importing untrained model
+2022-08-12 16:53:18,421:INFO:Croston Imported successfully
+2022-08-12 16:53:18,437:INFO:Starting cross validation
+2022-08-12 16:53:18,438:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:18,472:INFO:Calculating mean and std
+2022-08-12 16:53:18,473:INFO:Creating metrics dataframe
+2022-08-12 16:53:18,504:INFO:Uploading results into container
+2022-08-12 16:53:18,504:INFO:Uploading model into container now
+2022-08-12 16:53:18,504:INFO:master_model_container: 8
+2022-08-12 16:53:18,504:INFO:display_container: 2
+2022-08-12 16:53:18,505:INFO:Croston()
+2022-08-12 16:53:18,505:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:18,697:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:18,697:INFO:Creating metrics dataframe
+2022-08-12 16:53:18,729:INFO:Initializing ETS
+2022-08-12 16:53:18,729:INFO:Total runtime is 2.0154022932052613 minutes
+2022-08-12 16:53:18,739:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:18,739:INFO:Initializing create_model()
+2022-08-12 16:53:18,739:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=ets, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:18,739:INFO:Checking exceptions
+2022-08-12 16:53:18,741:INFO:Importing libraries
+2022-08-12 16:53:18,741:INFO:Copying training dataset
+2022-08-12 16:53:18,745:INFO:Defining folds
+2022-08-12 16:53:18,745:INFO:Declaring metric variables
+2022-08-12 16:53:18,752:INFO:Importing untrained model
+2022-08-12 16:53:18,760:INFO:ETS Imported successfully
+2022-08-12 16:53:18,776:INFO:Starting cross validation
+2022-08-12 16:53:18,777:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:19,209:INFO:Calculating mean and std
+2022-08-12 16:53:19,211:INFO:Creating metrics dataframe
+2022-08-12 16:53:19,243:INFO:Uploading results into container
+2022-08-12 16:53:19,243:INFO:Uploading model into container now
+2022-08-12 16:53:19,243:INFO:master_model_container: 9
+2022-08-12 16:53:19,243:INFO:display_container: 2
+2022-08-12 16:53:19,244:INFO:AutoETS(seasonal='mul', sp=12, trend='add')
+2022-08-12 16:53:19,244:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:19,431:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:19,431:INFO:Creating metrics dataframe
+2022-08-12 16:53:19,463:INFO:Initializing Theta Forecaster
+2022-08-12 16:53:19,464:INFO:Total runtime is 2.0276422301928205 minutes
+2022-08-12 16:53:19,472:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:19,472:INFO:Initializing create_model()
+2022-08-12 16:53:19,472:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=theta, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:19,472:INFO:Checking exceptions
+2022-08-12 16:53:19,474:INFO:Importing libraries
+2022-08-12 16:53:19,474:INFO:Copying training dataset
+2022-08-12 16:53:19,478:INFO:Defining folds
+2022-08-12 16:53:19,478:INFO:Declaring metric variables
+2022-08-12 16:53:19,486:INFO:Importing untrained model
+2022-08-12 16:53:19,494:INFO:Theta Forecaster Imported successfully
+2022-08-12 16:53:19,510:INFO:Starting cross validation
+2022-08-12 16:53:19,511:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:19,621:INFO:Calculating mean and std
+2022-08-12 16:53:19,623:INFO:Creating metrics dataframe
+2022-08-12 16:53:19,660:INFO:Uploading results into container
+2022-08-12 16:53:19,661:INFO:Uploading model into container now
+2022-08-12 16:53:19,661:INFO:master_model_container: 10
+2022-08-12 16:53:19,661:INFO:display_container: 2
+2022-08-12 16:53:19,661:INFO:ThetaForecaster(sp=12)
+2022-08-12 16:53:19,661:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:19,850:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:19,850:INFO:Creating metrics dataframe
+2022-08-12 16:53:19,880:INFO:Initializing Linear w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:53:19,880:INFO:Total runtime is 2.034583683808645 minutes
+2022-08-12 16:53:19,889:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:19,889:INFO:Initializing create_model()
+2022-08-12 16:53:19,889:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=lr_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:19,889:INFO:Checking exceptions
+2022-08-12 16:53:19,891:INFO:Importing libraries
+2022-08-12 16:53:19,891:INFO:Copying training dataset
+2022-08-12 16:53:19,895:INFO:Defining folds
+2022-08-12 16:53:19,895:INFO:Declaring metric variables
+2022-08-12 16:53:19,903:INFO:Importing untrained model
+2022-08-12 16:53:19,911:INFO:Linear w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:53:19,927:INFO:Starting cross validation
+2022-08-12 16:53:19,928:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:20,122:INFO:Calculating mean and std
+2022-08-12 16:53:20,123:INFO:Creating metrics dataframe
+2022-08-12 16:53:20,149:INFO:Uploading results into container
+2022-08-12 16:53:20,150:INFO:Uploading model into container now
+2022-08-12 16:53:20,150:INFO:master_model_container: 11
+2022-08-12 16:53:20,150:INFO:display_container: 2
+2022-08-12 16:53:20,151:INFO:BaseCdsDtForecaster(regressor=LinearRegression(n_jobs=-1), sp=12,
+                    window_length=12)
+2022-08-12 16:53:20,151:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:20,332:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:20,332:INFO:Creating metrics dataframe
+2022-08-12 16:53:20,360:INFO:Initializing Elastic Net w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:53:20,360:INFO:Total runtime is 2.042584613958995 minutes
+2022-08-12 16:53:20,370:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:20,370:INFO:Initializing create_model()
+2022-08-12 16:53:20,370:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=en_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:20,370:INFO:Checking exceptions
+2022-08-12 16:53:20,372:INFO:Importing libraries
+2022-08-12 16:53:20,372:INFO:Copying training dataset
+2022-08-12 16:53:20,375:INFO:Defining folds
+2022-08-12 16:53:20,375:INFO:Declaring metric variables
+2022-08-12 16:53:20,383:INFO:Importing untrained model
+2022-08-12 16:53:20,392:INFO:Elastic Net w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:53:20,409:INFO:Starting cross validation
+2022-08-12 16:53:20,410:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:20,617:INFO:Calculating mean and std
+2022-08-12 16:53:20,618:INFO:Creating metrics dataframe
+2022-08-12 16:53:20,644:INFO:Uploading results into container
+2022-08-12 16:53:20,644:INFO:Uploading model into container now
+2022-08-12 16:53:20,645:INFO:master_model_container: 12
+2022-08-12 16:53:20,645:INFO:display_container: 2
+2022-08-12 16:53:20,646:INFO:BaseCdsDtForecaster(regressor=ElasticNet(random_state=123), sp=12,
+                    window_length=12)
+2022-08-12 16:53:20,646:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:20,826:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:20,826:INFO:Creating metrics dataframe
+2022-08-12 16:53:20,854:INFO:Initializing Ridge w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:53:20,855:INFO:Total runtime is 2.0508244276046756 minutes
+2022-08-12 16:53:20,864:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:20,864:INFO:Initializing create_model()
+2022-08-12 16:53:20,865:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=ridge_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:20,865:INFO:Checking exceptions
+2022-08-12 16:53:20,866:INFO:Importing libraries
+2022-08-12 16:53:20,866:INFO:Copying training dataset
+2022-08-12 16:53:20,869:INFO:Defining folds
+2022-08-12 16:53:20,869:INFO:Declaring metric variables
+2022-08-12 16:53:20,877:INFO:Importing untrained model
+2022-08-12 16:53:20,886:INFO:Ridge w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:53:20,904:INFO:Starting cross validation
+2022-08-12 16:53:20,904:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:21,102:INFO:Calculating mean and std
+2022-08-12 16:53:21,103:INFO:Creating metrics dataframe
+2022-08-12 16:53:21,135:INFO:Uploading results into container
+2022-08-12 16:53:21,135:INFO:Uploading model into container now
+2022-08-12 16:53:21,135:INFO:master_model_container: 13
+2022-08-12 16:53:21,135:INFO:display_container: 2
+2022-08-12 16:53:21,136:INFO:BaseCdsDtForecaster(regressor=Ridge(random_state=123), sp=12, window_length=12)
+2022-08-12 16:53:21,136:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:21,317:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:21,317:INFO:Creating metrics dataframe
+2022-08-12 16:53:21,346:INFO:Initializing Lasso w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:53:21,346:INFO:Total runtime is 2.059013680617015 minutes
+2022-08-12 16:53:21,356:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:21,356:INFO:Initializing create_model()
+2022-08-12 16:53:21,356:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=lasso_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:21,356:INFO:Checking exceptions
+2022-08-12 16:53:21,358:INFO:Importing libraries
+2022-08-12 16:53:21,358:INFO:Copying training dataset
+2022-08-12 16:53:21,361:INFO:Defining folds
+2022-08-12 16:53:21,361:INFO:Declaring metric variables
+2022-08-12 16:53:21,369:INFO:Importing untrained model
+2022-08-12 16:53:21,377:INFO:Lasso w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:53:21,393:INFO:Starting cross validation
+2022-08-12 16:53:21,394:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:21,587:INFO:Calculating mean and std
+2022-08-12 16:53:21,589:INFO:Creating metrics dataframe
+2022-08-12 16:53:21,617:INFO:Uploading results into container
+2022-08-12 16:53:21,617:INFO:Uploading model into container now
+2022-08-12 16:53:21,617:INFO:master_model_container: 14
+2022-08-12 16:53:21,617:INFO:display_container: 2
+2022-08-12 16:53:21,618:INFO:BaseCdsDtForecaster(regressor=Lasso(random_state=123), sp=12, window_length=12)
+2022-08-12 16:53:21,618:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:21,798:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:21,799:INFO:Creating metrics dataframe
+2022-08-12 16:53:21,828:INFO:Initializing Least Angular Regressor w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:53:21,828:INFO:Total runtime is 2.067055356502533 minutes
+2022-08-12 16:53:21,838:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:21,838:INFO:Initializing create_model()
+2022-08-12 16:53:21,838:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=lar_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:21,838:INFO:Checking exceptions
+2022-08-12 16:53:21,840:INFO:Importing libraries
+2022-08-12 16:53:21,840:INFO:Copying training dataset
+2022-08-12 16:53:21,843:INFO:Defining folds
+2022-08-12 16:53:21,843:INFO:Declaring metric variables
+2022-08-12 16:53:21,852:INFO:Importing untrained model
+2022-08-12 16:53:21,861:INFO:Least Angular Regressor w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:53:21,882:INFO:Starting cross validation
+2022-08-12 16:53:21,883:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:22,067:INFO:Calculating mean and std
+2022-08-12 16:53:22,068:INFO:Creating metrics dataframe
+2022-08-12 16:53:22,097:INFO:Uploading results into container
+2022-08-12 16:53:22,097:INFO:Uploading model into container now
+2022-08-12 16:53:22,097:INFO:master_model_container: 15
+2022-08-12 16:53:22,097:INFO:display_container: 2
+2022-08-12 16:53:22,098:INFO:BaseCdsDtForecaster(regressor=Lars(random_state=123), sp=12, window_length=12)
+2022-08-12 16:53:22,098:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:22,283:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:22,283:INFO:Creating metrics dataframe
+2022-08-12 16:53:22,313:INFO:Initializing Lasso Least Angular Regressor w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:53:22,313:INFO:Total runtime is 2.0751395066579184 minutes
+2022-08-12 16:53:22,322:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:22,322:INFO:Initializing create_model()
+2022-08-12 16:53:22,322:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=llar_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:22,322:INFO:Checking exceptions
+2022-08-12 16:53:22,324:INFO:Importing libraries
+2022-08-12 16:53:22,324:INFO:Copying training dataset
+2022-08-12 16:53:22,328:INFO:Defining folds
+2022-08-12 16:53:22,328:INFO:Declaring metric variables
+2022-08-12 16:53:22,336:INFO:Importing untrained model
+2022-08-12 16:53:22,345:INFO:Lasso Least Angular Regressor w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:53:22,362:INFO:Starting cross validation
+2022-08-12 16:53:22,363:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:22,447:INFO:Calculating mean and std
+2022-08-12 16:53:22,449:INFO:Creating metrics dataframe
+2022-08-12 16:53:22,482:INFO:Uploading results into container
+2022-08-12 16:53:22,482:INFO:Uploading model into container now
+2022-08-12 16:53:22,483:INFO:master_model_container: 16
+2022-08-12 16:53:22,483:INFO:display_container: 2
+2022-08-12 16:53:22,484:INFO:BaseCdsDtForecaster(regressor=LassoLars(random_state=123), sp=12,
+                    window_length=12)
+2022-08-12 16:53:22,484:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:22,671:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:22,672:INFO:Creating metrics dataframe
+2022-08-12 16:53:22,703:INFO:Initializing Bayesian Ridge w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:53:22,703:INFO:Total runtime is 2.081631902853648 minutes
+2022-08-12 16:53:22,712:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:22,712:INFO:Initializing create_model()
+2022-08-12 16:53:22,712:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=br_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:22,712:INFO:Checking exceptions
+2022-08-12 16:53:22,714:INFO:Importing libraries
+2022-08-12 16:53:22,714:INFO:Copying training dataset
+2022-08-12 16:53:22,717:INFO:Defining folds
+2022-08-12 16:53:22,717:INFO:Declaring metric variables
+2022-08-12 16:53:22,725:INFO:Importing untrained model
+2022-08-12 16:53:22,733:INFO:Bayesian Ridge w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:53:22,749:INFO:Starting cross validation
+2022-08-12 16:53:22,750:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:22,808:INFO:Calculating mean and std
+2022-08-12 16:53:22,810:INFO:Creating metrics dataframe
+2022-08-12 16:53:22,839:INFO:Uploading results into container
+2022-08-12 16:53:22,840:INFO:Uploading model into container now
+2022-08-12 16:53:22,840:INFO:master_model_container: 17
+2022-08-12 16:53:22,840:INFO:display_container: 2
+2022-08-12 16:53:22,840:INFO:BaseCdsDtForecaster(regressor=BayesianRidge(), sp=12, window_length=12)
+2022-08-12 16:53:22,840:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:23,024:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:23,025:INFO:Creating metrics dataframe
+2022-08-12 16:53:23,055:INFO:Initializing Huber w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:53:23,055:INFO:Total runtime is 2.0875068426132204 minutes
+2022-08-12 16:53:23,064:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:23,064:INFO:Initializing create_model()
+2022-08-12 16:53:23,065:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=huber_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:23,065:INFO:Checking exceptions
+2022-08-12 16:53:23,067:INFO:Importing libraries
+2022-08-12 16:53:23,067:INFO:Copying training dataset
+2022-08-12 16:53:23,070:INFO:Defining folds
+2022-08-12 16:53:23,070:INFO:Declaring metric variables
+2022-08-12 16:53:23,078:INFO:Importing untrained model
+2022-08-12 16:53:23,087:INFO:Huber w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:53:23,103:INFO:Starting cross validation
+2022-08-12 16:53:23,104:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:23,190:INFO:Calculating mean and std
+2022-08-12 16:53:23,192:INFO:Creating metrics dataframe
+2022-08-12 16:53:23,223:INFO:Uploading results into container
+2022-08-12 16:53:23,224:INFO:Uploading model into container now
+2022-08-12 16:53:23,224:INFO:master_model_container: 18
+2022-08-12 16:53:23,224:INFO:display_container: 2
+2022-08-12 16:53:23,224:INFO:BaseCdsDtForecaster(regressor=HuberRegressor(), sp=12, window_length=12)
+2022-08-12 16:53:23,225:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:23,413:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:23,413:INFO:Creating metrics dataframe
+2022-08-12 16:53:23,444:INFO:Initializing Passive Aggressive w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:53:23,444:INFO:Total runtime is 2.093981226285299 minutes
+2022-08-12 16:53:23,454:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:23,454:INFO:Initializing create_model()
+2022-08-12 16:53:23,454:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=par_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:23,454:INFO:Checking exceptions
+2022-08-12 16:53:23,456:INFO:Importing libraries
+2022-08-12 16:53:23,456:INFO:Copying training dataset
+2022-08-12 16:53:23,459:INFO:Defining folds
+2022-08-12 16:53:23,459:INFO:Declaring metric variables
+2022-08-12 16:53:23,468:INFO:Importing untrained model
+2022-08-12 16:53:23,477:INFO:Passive Aggressive w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:53:23,494:INFO:Starting cross validation
+2022-08-12 16:53:23,495:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:23,570:INFO:Calculating mean and std
+2022-08-12 16:53:23,571:INFO:Creating metrics dataframe
+2022-08-12 16:53:23,600:INFO:Uploading results into container
+2022-08-12 16:53:23,600:INFO:Uploading model into container now
+2022-08-12 16:53:23,600:INFO:master_model_container: 19
+2022-08-12 16:53:23,601:INFO:display_container: 2
+2022-08-12 16:53:23,602:INFO:BaseCdsDtForecaster(regressor=PassiveAggressiveRegressor(random_state=123),
+                    sp=12, window_length=12)
+2022-08-12 16:53:23,602:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:23,783:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:23,783:INFO:Creating metrics dataframe
+2022-08-12 16:53:23,814:INFO:Initializing Orthogonal Matching Pursuit w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:53:23,814:INFO:Total runtime is 2.1001527706782026 minutes
+2022-08-12 16:53:23,824:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:23,824:INFO:Initializing create_model()
+2022-08-12 16:53:23,824:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=omp_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:23,824:INFO:Checking exceptions
+2022-08-12 16:53:23,826:INFO:Importing libraries
+2022-08-12 16:53:23,826:INFO:Copying training dataset
+2022-08-12 16:53:23,829:INFO:Defining folds
+2022-08-12 16:53:23,829:INFO:Declaring metric variables
+2022-08-12 16:53:23,837:INFO:Importing untrained model
+2022-08-12 16:53:23,846:INFO:Orthogonal Matching Pursuit w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:53:23,863:INFO:Starting cross validation
+2022-08-12 16:53:23,863:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:23,939:INFO:Calculating mean and std
+2022-08-12 16:53:23,941:INFO:Creating metrics dataframe
+2022-08-12 16:53:23,968:INFO:Uploading results into container
+2022-08-12 16:53:23,968:INFO:Uploading model into container now
+2022-08-12 16:53:23,968:INFO:master_model_container: 20
+2022-08-12 16:53:23,968:INFO:display_container: 2
+2022-08-12 16:53:23,969:INFO:BaseCdsDtForecaster(regressor=OrthogonalMatchingPursuit(), sp=12,
+                    window_length=12)
+2022-08-12 16:53:23,969:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:24,151:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:24,151:INFO:Creating metrics dataframe
+2022-08-12 16:53:24,183:INFO:Initializing K Neighbors w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:53:24,184:INFO:Total runtime is 2.1063075105349225 minutes
+2022-08-12 16:53:24,193:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:24,193:INFO:Initializing create_model()
+2022-08-12 16:53:24,193:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=knn_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:24,193:INFO:Checking exceptions
+2022-08-12 16:53:24,195:INFO:Importing libraries
+2022-08-12 16:53:24,195:INFO:Copying training dataset
+2022-08-12 16:53:24,198:INFO:Defining folds
+2022-08-12 16:53:24,199:INFO:Declaring metric variables
+2022-08-12 16:53:24,207:INFO:Importing untrained model
+2022-08-12 16:53:24,216:INFO:K Neighbors w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:53:24,234:INFO:Starting cross validation
+2022-08-12 16:53:24,235:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:24,434:INFO:Calculating mean and std
+2022-08-12 16:53:24,436:INFO:Creating metrics dataframe
+2022-08-12 16:53:24,463:INFO:Uploading results into container
+2022-08-12 16:53:24,463:INFO:Uploading model into container now
+2022-08-12 16:53:24,463:INFO:master_model_container: 21
+2022-08-12 16:53:24,463:INFO:display_container: 2
+2022-08-12 16:53:24,465:INFO:BaseCdsDtForecaster(regressor=KNeighborsRegressor(n_jobs=-1), sp=12,
+                    window_length=12)
+2022-08-12 16:53:24,465:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:24,646:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:24,646:INFO:Creating metrics dataframe
+2022-08-12 16:53:24,678:INFO:Initializing Decision Tree w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:53:24,678:INFO:Total runtime is 2.114543692270915 minutes
+2022-08-12 16:53:24,687:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:24,687:INFO:Initializing create_model()
+2022-08-12 16:53:24,688:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=dt_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:24,688:INFO:Checking exceptions
+2022-08-12 16:53:24,690:INFO:Importing libraries
+2022-08-12 16:53:24,690:INFO:Copying training dataset
+2022-08-12 16:53:24,693:INFO:Defining folds
+2022-08-12 16:53:24,693:INFO:Declaring metric variables
+2022-08-12 16:53:24,702:INFO:Importing untrained model
+2022-08-12 16:53:24,710:INFO:Decision Tree w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:53:24,728:INFO:Starting cross validation
+2022-08-12 16:53:24,728:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:24,780:INFO:Calculating mean and std
+2022-08-12 16:53:24,782:INFO:Creating metrics dataframe
+2022-08-12 16:53:24,808:INFO:Uploading results into container
+2022-08-12 16:53:24,809:INFO:Uploading model into container now
+2022-08-12 16:53:24,809:INFO:master_model_container: 22
+2022-08-12 16:53:24,809:INFO:display_container: 2
+2022-08-12 16:53:24,810:INFO:BaseCdsDtForecaster(regressor=DecisionTreeRegressor(random_state=123), sp=12,
+                    window_length=12)
+2022-08-12 16:53:24,810:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:24,992:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:24,992:INFO:Creating metrics dataframe
+2022-08-12 16:53:25,025:INFO:Initializing Random Forest w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:53:25,025:INFO:Total runtime is 2.1203278263409935 minutes
+2022-08-12 16:53:25,034:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:25,034:INFO:Initializing create_model()
+2022-08-12 16:53:25,034:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=rf_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:25,034:INFO:Checking exceptions
+2022-08-12 16:53:25,036:INFO:Importing libraries
+2022-08-12 16:53:25,036:INFO:Copying training dataset
+2022-08-12 16:53:25,039:INFO:Defining folds
+2022-08-12 16:53:25,039:INFO:Declaring metric variables
+2022-08-12 16:53:25,047:INFO:Importing untrained model
+2022-08-12 16:53:25,055:INFO:Random Forest w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:53:25,073:INFO:Starting cross validation
+2022-08-12 16:53:25,073:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:25,534:INFO:Calculating mean and std
+2022-08-12 16:53:25,536:INFO:Creating metrics dataframe
+2022-08-12 16:53:25,565:INFO:Uploading results into container
+2022-08-12 16:53:25,565:INFO:Uploading model into container now
+2022-08-12 16:53:25,565:INFO:master_model_container: 23
+2022-08-12 16:53:25,565:INFO:display_container: 2
+2022-08-12 16:53:25,567:INFO:BaseCdsDtForecaster(regressor=RandomForestRegressor(n_jobs=-1,
+                                                    random_state=123),
+                    sp=12, window_length=12)
+2022-08-12 16:53:25,567:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:25,749:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:25,749:INFO:Creating metrics dataframe
+2022-08-12 16:53:25,781:INFO:Initializing Extra Trees w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:53:25,781:INFO:Total runtime is 2.132934705416362 minutes
+2022-08-12 16:53:25,791:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:25,791:INFO:Initializing create_model()
+2022-08-12 16:53:25,791:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=et_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:25,791:INFO:Checking exceptions
+2022-08-12 16:53:25,793:INFO:Importing libraries
+2022-08-12 16:53:25,793:INFO:Copying training dataset
+2022-08-12 16:53:25,796:INFO:Defining folds
+2022-08-12 16:53:25,796:INFO:Declaring metric variables
+2022-08-12 16:53:25,804:INFO:Importing untrained model
+2022-08-12 16:53:25,812:INFO:Extra Trees w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:53:25,828:INFO:Starting cross validation
+2022-08-12 16:53:25,829:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:26,127:INFO:Calculating mean and std
+2022-08-12 16:53:26,129:INFO:Creating metrics dataframe
+2022-08-12 16:53:26,160:INFO:Uploading results into container
+2022-08-12 16:53:26,160:INFO:Uploading model into container now
+2022-08-12 16:53:26,160:INFO:master_model_container: 24
+2022-08-12 16:53:26,160:INFO:display_container: 2
+2022-08-12 16:53:26,161:INFO:BaseCdsDtForecaster(regressor=ExtraTreesRegressor(n_jobs=-1, random_state=123),
+                    sp=12, window_length=12)
+2022-08-12 16:53:26,161:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:26,343:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:26,343:INFO:Creating metrics dataframe
+2022-08-12 16:53:26,376:INFO:Initializing Gradient Boosting w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:53:26,376:INFO:Total runtime is 2.1428523699442548 minutes
+2022-08-12 16:53:26,386:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:26,386:INFO:Initializing create_model()
+2022-08-12 16:53:26,386:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=gbr_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:26,386:INFO:Checking exceptions
+2022-08-12 16:53:26,388:INFO:Importing libraries
+2022-08-12 16:53:26,388:INFO:Copying training dataset
+2022-08-12 16:53:26,391:INFO:Defining folds
+2022-08-12 16:53:26,391:INFO:Declaring metric variables
+2022-08-12 16:53:26,399:INFO:Importing untrained model
+2022-08-12 16:53:26,407:INFO:Gradient Boosting w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:53:26,425:INFO:Starting cross validation
+2022-08-12 16:53:26,426:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:26,565:INFO:Calculating mean and std
+2022-08-12 16:53:26,566:INFO:Creating metrics dataframe
+2022-08-12 16:53:26,592:INFO:Uploading results into container
+2022-08-12 16:53:26,593:INFO:Uploading model into container now
+2022-08-12 16:53:26,593:INFO:master_model_container: 25
+2022-08-12 16:53:26,593:INFO:display_container: 2
+2022-08-12 16:53:26,594:INFO:BaseCdsDtForecaster(regressor=GradientBoostingRegressor(random_state=123),
+                    sp=12, window_length=12)
+2022-08-12 16:53:26,594:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:26,776:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:26,776:INFO:Creating metrics dataframe
+2022-08-12 16:53:26,810:INFO:Initializing AdaBoost w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:53:26,810:INFO:Total runtime is 2.150084273020427 minutes
+2022-08-12 16:53:26,820:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:26,820:INFO:Initializing create_model()
+2022-08-12 16:53:26,820:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=ada_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:26,820:INFO:Checking exceptions
+2022-08-12 16:53:26,822:INFO:Importing libraries
+2022-08-12 16:53:26,822:INFO:Copying training dataset
+2022-08-12 16:53:26,825:INFO:Defining folds
+2022-08-12 16:53:26,825:INFO:Declaring metric variables
+2022-08-12 16:53:26,833:INFO:Importing untrained model
+2022-08-12 16:53:26,842:INFO:AdaBoost w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:53:26,859:INFO:Starting cross validation
+2022-08-12 16:53:26,860:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:27,051:INFO:Calculating mean and std
+2022-08-12 16:53:27,053:INFO:Creating metrics dataframe
+2022-08-12 16:53:27,083:INFO:Uploading results into container
+2022-08-12 16:53:27,084:INFO:Uploading model into container now
+2022-08-12 16:53:27,084:INFO:master_model_container: 26
+2022-08-12 16:53:27,085:INFO:display_container: 2
+2022-08-12 16:53:27,085:INFO:BaseCdsDtForecaster(regressor=AdaBoostRegressor(random_state=123), sp=12,
+                    window_length=12)
+2022-08-12 16:53:27,086:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:27,266:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:27,266:INFO:Creating metrics dataframe
+2022-08-12 16:53:27,299:INFO:Initializing Extreme Gradient Boosting w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:53:27,300:INFO:Total runtime is 2.158240330219269 minutes
+2022-08-12 16:53:27,308:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:27,308:INFO:Initializing create_model()
+2022-08-12 16:53:27,308:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=xgboost_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:27,308:INFO:Checking exceptions
+2022-08-12 16:53:27,310:INFO:Importing libraries
+2022-08-12 16:53:27,310:INFO:Copying training dataset
+2022-08-12 16:53:27,313:INFO:Defining folds
+2022-08-12 16:53:27,314:INFO:Declaring metric variables
+2022-08-12 16:53:27,321:INFO:Importing untrained model
+2022-08-12 16:53:27,330:INFO:Extreme Gradient Boosting w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:53:27,346:INFO:Starting cross validation
+2022-08-12 16:53:27,347:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:59,111:INFO:Calculating mean and std
+2022-08-12 16:53:59,112:INFO:Creating metrics dataframe
+2022-08-12 16:53:59,138:INFO:Uploading results into container
+2022-08-12 16:53:59,138:INFO:Uploading model into container now
+2022-08-12 16:53:59,139:INFO:master_model_container: 27
+2022-08-12 16:53:59,139:INFO:display_container: 2
+2022-08-12 16:53:59,143:INFO:BaseCdsDtForecaster(regressor=XGBRegressor(base_score=None, booster='gbtree',
+                                           callbacks=None,
+                                           colsample_bylevel=None,
+                                           colsample_bynode=None,
+                                           colsample_bytree=None,
+                                           early_stopping_rounds=None,
+                                           enable_categorical=False,
+                                           eval_metric=None, gamma=None,
+                                           gpu_id=None, grow_policy=None,
+                                           importance_type=None,
+                                           interaction_constraints=None,
+                                           learning_rate=None, max_bin=None,
+                                           max_cat_to_onehot=None,
+                                           max_delta_step=None, max_depth=None,
+                                           max_leaves=None,
+                                           min_child_weight=None, missing=nan,
+                                           monotone_constraints=None,
+                                           n_estimators=100, n_jobs=-1,
+                                           num_parallel_tree=None,
+                                           predictor=None, random_state=123,
+                                           reg_alpha=None, reg_lambda=None, ...),
+                    sp=12, window_length=12)
+2022-08-12 16:53:59,144:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:59,326:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:59,327:INFO:Creating metrics dataframe
+2022-08-12 16:53:59,359:INFO:Initializing Light Gradient Boosting w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:53:59,360:INFO:Total runtime is 2.6925751010576886 minutes
+2022-08-12 16:53:59,368:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:59,368:INFO:Initializing create_model()
+2022-08-12 16:53:59,368:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=lightgbm_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:59,368:INFO:Checking exceptions
+2022-08-12 16:53:59,370:INFO:Importing libraries
+2022-08-12 16:53:59,370:INFO:Copying training dataset
+2022-08-12 16:53:59,373:INFO:Defining folds
+2022-08-12 16:53:59,373:INFO:Declaring metric variables
+2022-08-12 16:53:59,380:INFO:Importing untrained model
+2022-08-12 16:53:59,388:INFO:Light Gradient Boosting w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:53:59,404:INFO:Starting cross validation
+2022-08-12 16:53:59,404:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:53:59,502:INFO:Calculating mean and std
+2022-08-12 16:53:59,504:INFO:Creating metrics dataframe
+2022-08-12 16:53:59,534:INFO:Uploading results into container
+2022-08-12 16:53:59,534:INFO:Uploading model into container now
+2022-08-12 16:53:59,534:INFO:master_model_container: 28
+2022-08-12 16:53:59,534:INFO:display_container: 2
+2022-08-12 16:53:59,535:INFO:BaseCdsDtForecaster(regressor=LGBMRegressor(random_state=123), sp=12,
+                    window_length=12)
+2022-08-12 16:53:59,536:INFO:create_model() successfully completed......................................
+2022-08-12 16:53:59,719:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:53:59,719:INFO:Creating metrics dataframe
+2022-08-12 16:53:59,753:INFO:Initializing CatBoost Regressor w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:53:59,753:INFO:Total runtime is 2.699125969409943 minutes
+2022-08-12 16:53:59,761:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:53:59,761:INFO:Initializing create_model()
+2022-08-12 16:53:59,761:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=catboost_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa4eb0cf610>, kwargs={})
+2022-08-12 16:53:59,761:INFO:Checking exceptions
+2022-08-12 16:53:59,763:INFO:Importing libraries
+2022-08-12 16:53:59,763:INFO:Copying training dataset
+2022-08-12 16:53:59,766:INFO:Defining folds
+2022-08-12 16:53:59,766:INFO:Declaring metric variables
+2022-08-12 16:53:59,774:INFO:Importing untrained model
+2022-08-12 16:53:59,781:INFO:CatBoost Regressor w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:53:59,797:INFO:Starting cross validation
+2022-08-12 16:53:59,797:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:54:04,724:INFO:Calculating mean and std
+2022-08-12 16:54:04,726:INFO:Creating metrics dataframe
+2022-08-12 16:54:04,759:INFO:Uploading results into container
+2022-08-12 16:54:04,759:INFO:Uploading model into container now
+2022-08-12 16:54:04,759:INFO:master_model_container: 29
+2022-08-12 16:54:04,759:INFO:display_container: 2
+2022-08-12 16:54:04,760:INFO:BaseCdsDtForecaster(regressor=<catboost.core.CatBoostRegressor object at 0x7fa4eb0d97c0>,
+                    sp=12, window_length=12)
+2022-08-12 16:54:04,760:INFO:create_model() successfully completed......................................
+2022-08-12 16:54:04,949:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:54:04,950:INFO:Creating metrics dataframe
+2022-08-12 16:54:05,003:INFO:Initializing create_model()
+2022-08-12 16:54:05,003:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=ExponentialSmoothing(seasonal='mul', sp=12, trend='add'), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, kwargs={})
+2022-08-12 16:54:05,003:INFO:Checking exceptions
+2022-08-12 16:54:05,006:INFO:Importing libraries
+2022-08-12 16:54:05,006:INFO:Copying training dataset
+2022-08-12 16:54:05,009:INFO:Defining folds
+2022-08-12 16:54:05,010:INFO:Declaring metric variables
+2022-08-12 16:54:05,010:INFO:Importing untrained model
+2022-08-12 16:54:05,010:INFO:Declaring custom model
+2022-08-12 16:54:05,011:INFO:Exponential Smoothing Imported successfully
+2022-08-12 16:54:05,011:INFO:Cross validation set to False
+2022-08-12 16:54:05,011:INFO:Fitting Model
+2022-08-12 16:54:05,225:INFO:ExponentialSmoothing(seasonal='mul', sp=12, trend='add')
+2022-08-12 16:54:05,225:INFO:create_models() successfully completed......................................
+2022-08-12 16:54:05,471:INFO:master_model_container: 29
+2022-08-12 16:54:05,471:INFO:display_container: 2
+2022-08-12 16:54:05,471:INFO:ExponentialSmoothing(seasonal='mul', sp=12, trend='add')
+2022-08-12 16:54:05,471:INFO:compare_models() successfully completed......................................
+2022-08-12 16:55:23,995:INFO:Initializing compare_models()
+2022-08-12 16:55:23,995:INFO:compare_models(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, include=None, fold=None, round=4, cross_validation=True, sort=SMAPE, n_select=1, budget_time=None, turbo=False, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, display=None, exclude=None)
+2022-08-12 16:55:23,995:INFO:Checking exceptions
+2022-08-12 16:55:23,999:INFO:Preparing display monitor
+2022-08-12 16:55:23,999:INFO:Preparing display monitor
+2022-08-12 16:55:24,029:INFO:Initializing Naive Forecaster
+2022-08-12 16:55:24,029:INFO:Total runtime is 1.899401346842448e-06 minutes
+2022-08-12 16:55:24,037:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:55:24,037:INFO:Initializing create_model()
+2022-08-12 16:55:24,037:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=naive, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:55:24,037:INFO:Checking exceptions
+2022-08-12 16:55:24,039:INFO:Importing libraries
+2022-08-12 16:55:24,039:INFO:Copying training dataset
+2022-08-12 16:55:24,042:INFO:Defining folds
+2022-08-12 16:55:24,042:INFO:Declaring metric variables
+2022-08-12 16:55:24,050:INFO:Importing untrained model
+2022-08-12 16:55:24,057:INFO:Naive Forecaster Imported successfully
+2022-08-12 16:55:24,073:INFO:Starting cross validation
+2022-08-12 16:55:24,074:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:55:24,117:INFO:Calculating mean and std
+2022-08-12 16:55:24,118:INFO:Creating metrics dataframe
+2022-08-12 16:55:24,145:INFO:Uploading results into container
+2022-08-12 16:55:24,145:INFO:Uploading model into container now
+2022-08-12 16:55:24,145:INFO:master_model_container: 30
+2022-08-12 16:55:24,145:INFO:display_container: 3
+2022-08-12 16:55:24,145:INFO:NaiveForecaster()
+2022-08-12 16:55:24,145:INFO:create_model() successfully completed......................................
+2022-08-12 16:55:24,327:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:55:24,327:INFO:Creating metrics dataframe
+2022-08-12 16:55:24,350:INFO:Initializing Grand Means Forecaster
+2022-08-12 16:55:24,351:INFO:Total runtime is 0.0053589145342508955 minutes
+2022-08-12 16:55:24,359:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:55:24,359:INFO:Initializing create_model()
+2022-08-12 16:55:24,359:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=grand_means, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:55:24,359:INFO:Checking exceptions
+2022-08-12 16:55:24,361:INFO:Importing libraries
+2022-08-12 16:55:24,361:INFO:Copying training dataset
+2022-08-12 16:55:24,364:INFO:Defining folds
+2022-08-12 16:55:24,364:INFO:Declaring metric variables
+2022-08-12 16:55:24,371:INFO:Importing untrained model
+2022-08-12 16:55:24,379:INFO:Grand Means Forecaster Imported successfully
+2022-08-12 16:55:24,394:INFO:Starting cross validation
+2022-08-12 16:55:24,395:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:55:24,438:INFO:Calculating mean and std
+2022-08-12 16:55:24,439:INFO:Creating metrics dataframe
+2022-08-12 16:55:24,466:INFO:Uploading results into container
+2022-08-12 16:55:24,466:INFO:Uploading model into container now
+2022-08-12 16:55:24,466:INFO:master_model_container: 31
+2022-08-12 16:55:24,466:INFO:display_container: 3
+2022-08-12 16:55:24,466:INFO:NaiveForecaster(strategy='mean')
+2022-08-12 16:55:24,467:INFO:create_model() successfully completed......................................
+2022-08-12 16:55:24,650:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:55:24,651:INFO:Creating metrics dataframe
+2022-08-12 16:55:24,675:INFO:Initializing Seasonal Naive Forecaster
+2022-08-12 16:55:24,675:INFO:Total runtime is 0.010770865281422933 minutes
+2022-08-12 16:55:24,684:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:55:24,684:INFO:Initializing create_model()
+2022-08-12 16:55:24,684:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=snaive, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:55:24,684:INFO:Checking exceptions
+2022-08-12 16:55:24,686:INFO:Importing libraries
+2022-08-12 16:55:24,686:INFO:Copying training dataset
+2022-08-12 16:55:24,689:INFO:Defining folds
+2022-08-12 16:55:24,689:INFO:Declaring metric variables
+2022-08-12 16:55:24,697:INFO:Importing untrained model
+2022-08-12 16:55:24,704:INFO:Seasonal Naive Forecaster Imported successfully
+2022-08-12 16:55:24,720:INFO:Starting cross validation
+2022-08-12 16:55:24,720:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:55:24,751:INFO:Calculating mean and std
+2022-08-12 16:55:24,753:INFO:Creating metrics dataframe
+2022-08-12 16:55:24,781:INFO:Uploading results into container
+2022-08-12 16:55:24,781:INFO:Uploading model into container now
+2022-08-12 16:55:24,781:INFO:master_model_container: 32
+2022-08-12 16:55:24,781:INFO:display_container: 3
+2022-08-12 16:55:24,782:INFO:NaiveForecaster(sp=12)
+2022-08-12 16:55:24,782:INFO:create_model() successfully completed......................................
+2022-08-12 16:55:24,964:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:55:24,964:INFO:Creating metrics dataframe
+2022-08-12 16:55:24,989:INFO:Initializing Polynomial Trend Forecaster
+2022-08-12 16:55:24,989:INFO:Total runtime is 0.0160055677096049 minutes
+2022-08-12 16:55:24,997:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:55:24,998:INFO:Initializing create_model()
+2022-08-12 16:55:24,998:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=polytrend, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:55:24,998:INFO:Checking exceptions
+2022-08-12 16:55:25,000:INFO:Importing libraries
+2022-08-12 16:55:25,000:INFO:Copying training dataset
+2022-08-12 16:55:25,003:INFO:Defining folds
+2022-08-12 16:55:25,003:INFO:Declaring metric variables
+2022-08-12 16:55:25,011:INFO:Importing untrained model
+2022-08-12 16:55:25,018:INFO:Polynomial Trend Forecaster Imported successfully
+2022-08-12 16:55:25,034:INFO:Starting cross validation
+2022-08-12 16:55:25,035:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:55:25,073:INFO:Calculating mean and std
+2022-08-12 16:55:25,074:INFO:Creating metrics dataframe
+2022-08-12 16:55:25,101:INFO:Uploading results into container
+2022-08-12 16:55:25,101:INFO:Uploading model into container now
+2022-08-12 16:55:25,102:INFO:master_model_container: 33
+2022-08-12 16:55:25,102:INFO:display_container: 3
+2022-08-12 16:55:25,102:INFO:PolynomialTrendForecaster()
+2022-08-12 16:55:25,102:INFO:create_model() successfully completed......................................
+2022-08-12 16:55:25,286:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:55:25,286:INFO:Creating metrics dataframe
+2022-08-12 16:55:25,311:INFO:Initializing ARIMA
+2022-08-12 16:55:25,311:INFO:Total runtime is 0.021366218725840252 minutes
+2022-08-12 16:55:25,319:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:55:25,319:INFO:Initializing create_model()
+2022-08-12 16:55:25,319:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=arima, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:55:25,319:INFO:Checking exceptions
+2022-08-12 16:55:25,321:INFO:Importing libraries
+2022-08-12 16:55:25,321:INFO:Copying training dataset
+2022-08-12 16:55:25,324:INFO:Defining folds
+2022-08-12 16:55:25,324:INFO:Declaring metric variables
+2022-08-12 16:55:25,333:INFO:Importing untrained model
+2022-08-12 16:55:25,341:INFO:ARIMA Imported successfully
+2022-08-12 16:55:25,356:INFO:Starting cross validation
+2022-08-12 16:55:25,357:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:55:25,685:INFO:Calculating mean and std
+2022-08-12 16:55:25,686:INFO:Creating metrics dataframe
+2022-08-12 16:55:25,713:INFO:Uploading results into container
+2022-08-12 16:55:25,713:INFO:Uploading model into container now
+2022-08-12 16:55:25,713:INFO:master_model_container: 34
+2022-08-12 16:55:25,713:INFO:display_container: 3
+2022-08-12 16:55:25,714:INFO:ARIMA(seasonal_order=(0, 1, 0, 12))
+2022-08-12 16:55:25,714:INFO:create_model() successfully completed......................................
+2022-08-12 16:55:25,897:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:55:25,897:INFO:Creating metrics dataframe
+2022-08-12 16:55:25,923:INFO:Initializing Auto ARIMA
+2022-08-12 16:55:25,923:INFO:Total runtime is 0.03157340288162232 minutes
+2022-08-12 16:55:25,932:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:55:25,932:INFO:Initializing create_model()
+2022-08-12 16:55:25,932:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=auto_arima, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:55:25,932:INFO:Checking exceptions
+2022-08-12 16:55:25,934:INFO:Importing libraries
+2022-08-12 16:55:25,934:INFO:Copying training dataset
+2022-08-12 16:55:25,937:INFO:Defining folds
+2022-08-12 16:55:25,937:INFO:Declaring metric variables
+2022-08-12 16:55:25,944:INFO:Importing untrained model
+2022-08-12 16:55:25,952:INFO:Auto ARIMA Imported successfully
+2022-08-12 16:55:25,968:INFO:Starting cross validation
+2022-08-12 16:55:25,969:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:57:11,020:INFO:Calculating mean and std
+2022-08-12 16:57:11,021:INFO:Creating metrics dataframe
+2022-08-12 16:57:11,048:INFO:Uploading results into container
+2022-08-12 16:57:11,048:INFO:Uploading model into container now
+2022-08-12 16:57:11,048:INFO:master_model_container: 35
+2022-08-12 16:57:11,048:INFO:display_container: 3
+2022-08-12 16:57:11,049:INFO:AutoARIMA(random_state=123, sp=12, suppress_warnings=True)
+2022-08-12 16:57:11,049:INFO:create_model() successfully completed......................................
+2022-08-12 16:57:11,232:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:57:11,232:INFO:Creating metrics dataframe
+2022-08-12 16:57:11,259:INFO:Initializing Exponential Smoothing
+2022-08-12 16:57:11,259:INFO:Total runtime is 1.7871630589167278 minutes
+2022-08-12 16:57:11,267:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:57:11,267:INFO:Initializing create_model()
+2022-08-12 16:57:11,267:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=exp_smooth, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:57:11,267:INFO:Checking exceptions
+2022-08-12 16:57:11,269:INFO:Importing libraries
+2022-08-12 16:57:11,269:INFO:Copying training dataset
+2022-08-12 16:57:11,272:INFO:Defining folds
+2022-08-12 16:57:11,272:INFO:Declaring metric variables
+2022-08-12 16:57:11,280:INFO:Importing untrained model
+2022-08-12 16:57:11,288:INFO:Exponential Smoothing Imported successfully
+2022-08-12 16:57:11,303:INFO:Starting cross validation
+2022-08-12 16:57:11,304:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:57:11,603:INFO:Calculating mean and std
+2022-08-12 16:57:11,605:INFO:Creating metrics dataframe
+2022-08-12 16:57:11,635:INFO:Uploading results into container
+2022-08-12 16:57:11,635:INFO:Uploading model into container now
+2022-08-12 16:57:11,635:INFO:master_model_container: 36
+2022-08-12 16:57:11,635:INFO:display_container: 3
+2022-08-12 16:57:11,635:INFO:ExponentialSmoothing(seasonal='mul', sp=12, trend='add')
+2022-08-12 16:57:11,635:INFO:create_model() successfully completed......................................
+2022-08-12 16:57:11,817:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:57:11,818:INFO:Creating metrics dataframe
+2022-08-12 16:57:11,844:INFO:Initializing Croston
+2022-08-12 16:57:11,845:INFO:Total runtime is 1.7969263354937237 minutes
+2022-08-12 16:57:11,853:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:57:11,853:INFO:Initializing create_model()
+2022-08-12 16:57:11,853:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=croston, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:57:11,853:INFO:Checking exceptions
+2022-08-12 16:57:11,855:INFO:Importing libraries
+2022-08-12 16:57:11,855:INFO:Copying training dataset
+2022-08-12 16:57:11,858:INFO:Defining folds
+2022-08-12 16:57:11,858:INFO:Declaring metric variables
+2022-08-12 16:57:11,866:INFO:Importing untrained model
+2022-08-12 16:57:11,873:INFO:Croston Imported successfully
+2022-08-12 16:57:11,889:INFO:Starting cross validation
+2022-08-12 16:57:11,889:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:57:11,915:INFO:Calculating mean and std
+2022-08-12 16:57:11,916:INFO:Creating metrics dataframe
+2022-08-12 16:57:11,943:INFO:Uploading results into container
+2022-08-12 16:57:11,943:INFO:Uploading model into container now
+2022-08-12 16:57:11,943:INFO:master_model_container: 37
+2022-08-12 16:57:11,943:INFO:display_container: 3
+2022-08-12 16:57:11,943:INFO:Croston()
+2022-08-12 16:57:11,944:INFO:create_model() successfully completed......................................
+2022-08-12 16:57:12,127:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:57:12,127:INFO:Creating metrics dataframe
+2022-08-12 16:57:12,154:INFO:Initializing ETS
+2022-08-12 16:57:12,154:INFO:Total runtime is 1.802090374628703 minutes
+2022-08-12 16:57:12,163:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:57:12,163:INFO:Initializing create_model()
+2022-08-12 16:57:12,163:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=ets, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:57:12,163:INFO:Checking exceptions
+2022-08-12 16:57:12,165:INFO:Importing libraries
+2022-08-12 16:57:12,165:INFO:Copying training dataset
+2022-08-12 16:57:12,168:INFO:Defining folds
+2022-08-12 16:57:12,168:INFO:Declaring metric variables
+2022-08-12 16:57:12,175:INFO:Importing untrained model
+2022-08-12 16:57:12,183:INFO:ETS Imported successfully
+2022-08-12 16:57:12,199:INFO:Starting cross validation
+2022-08-12 16:57:12,199:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:57:12,677:INFO:Calculating mean and std
+2022-08-12 16:57:12,678:INFO:Creating metrics dataframe
+2022-08-12 16:57:12,705:INFO:Uploading results into container
+2022-08-12 16:57:12,705:INFO:Uploading model into container now
+2022-08-12 16:57:12,705:INFO:master_model_container: 38
+2022-08-12 16:57:12,705:INFO:display_container: 3
+2022-08-12 16:57:12,706:INFO:AutoETS(seasonal='mul', sp=12, trend='add')
+2022-08-12 16:57:12,706:INFO:create_model() successfully completed......................................
+2022-08-12 16:57:12,888:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:57:12,889:INFO:Creating metrics dataframe
+2022-08-12 16:57:12,916:INFO:Initializing Theta Forecaster
+2022-08-12 16:57:12,916:INFO:Total runtime is 1.8147890329360963 minutes
+2022-08-12 16:57:12,924:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:57:12,925:INFO:Initializing create_model()
+2022-08-12 16:57:12,925:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=theta, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:57:12,925:INFO:Checking exceptions
+2022-08-12 16:57:12,927:INFO:Importing libraries
+2022-08-12 16:57:12,927:INFO:Copying training dataset
+2022-08-12 16:57:12,930:INFO:Defining folds
+2022-08-12 16:57:12,930:INFO:Declaring metric variables
+2022-08-12 16:57:12,937:INFO:Importing untrained model
+2022-08-12 16:57:12,945:INFO:Theta Forecaster Imported successfully
+2022-08-12 16:57:12,961:INFO:Starting cross validation
+2022-08-12 16:57:12,961:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:57:13,041:INFO:Calculating mean and std
+2022-08-12 16:57:13,042:INFO:Creating metrics dataframe
+2022-08-12 16:57:13,073:INFO:Uploading results into container
+2022-08-12 16:57:13,073:INFO:Uploading model into container now
+2022-08-12 16:57:13,073:INFO:master_model_container: 39
+2022-08-12 16:57:13,073:INFO:display_container: 3
+2022-08-12 16:57:13,073:INFO:ThetaForecaster(sp=12)
+2022-08-12 16:57:13,073:INFO:create_model() successfully completed......................................
+2022-08-12 16:57:13,256:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:57:13,256:INFO:Creating metrics dataframe
+2022-08-12 16:57:13,284:INFO:Initializing TBATS
+2022-08-12 16:57:13,284:INFO:Total runtime is 1.8209157427151998 minutes
+2022-08-12 16:57:13,292:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:57:13,292:INFO:Initializing create_model()
+2022-08-12 16:57:13,292:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=tbats, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:57:13,292:INFO:Checking exceptions
+2022-08-12 16:57:13,294:INFO:Importing libraries
+2022-08-12 16:57:13,294:INFO:Copying training dataset
+2022-08-12 16:57:13,297:INFO:Defining folds
+2022-08-12 16:57:13,297:INFO:Declaring metric variables
+2022-08-12 16:57:13,305:INFO:Importing untrained model
+2022-08-12 16:57:13,312:INFO:TBATS Imported successfully
+2022-08-12 16:57:13,328:INFO:Starting cross validation
+2022-08-12 16:57:13,329:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:58:24,533:INFO:Calculating mean and std
+2022-08-12 16:58:24,535:INFO:Creating metrics dataframe
+2022-08-12 16:58:24,562:INFO:Uploading results into container
+2022-08-12 16:58:24,562:INFO:Uploading model into container now
+2022-08-12 16:58:24,562:INFO:master_model_container: 40
+2022-08-12 16:58:24,562:INFO:display_container: 3
+2022-08-12 16:58:24,563:INFO:TBATS(show_warnings=False, sp=[12], use_box_cox=True)
+2022-08-12 16:58:24,563:INFO:create_model() successfully completed......................................
+2022-08-12 16:58:24,747:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:58:24,748:INFO:Creating metrics dataframe
+2022-08-12 16:58:24,775:INFO:Initializing BATS
+2022-08-12 16:58:24,775:INFO:Total runtime is 3.012435742219289 minutes
+2022-08-12 16:58:24,783:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:58:24,783:INFO:Initializing create_model()
+2022-08-12 16:58:24,784:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=bats, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:58:24,784:INFO:Checking exceptions
+2022-08-12 16:58:24,785:INFO:Importing libraries
+2022-08-12 16:58:24,785:INFO:Copying training dataset
+2022-08-12 16:58:24,789:INFO:Defining folds
+2022-08-12 16:58:24,789:INFO:Declaring metric variables
+2022-08-12 16:58:24,796:INFO:Importing untrained model
+2022-08-12 16:58:24,804:INFO:BATS Imported successfully
+2022-08-12 16:58:24,820:INFO:Starting cross validation
+2022-08-12 16:58:24,820:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:58:59,225:INFO:Calculating mean and std
+2022-08-12 16:58:59,227:INFO:Creating metrics dataframe
+2022-08-12 16:58:59,254:INFO:Uploading results into container
+2022-08-12 16:58:59,254:INFO:Uploading model into container now
+2022-08-12 16:58:59,254:INFO:master_model_container: 41
+2022-08-12 16:58:59,254:INFO:display_container: 3
+2022-08-12 16:58:59,254:INFO:BATS(show_warnings=False, sp=12, use_box_cox=True)
+2022-08-12 16:58:59,255:INFO:create_model() successfully completed......................................
+2022-08-12 16:58:59,438:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:58:59,438:INFO:Creating metrics dataframe
+2022-08-12 16:58:59,466:INFO:Initializing Prophet
+2022-08-12 16:58:59,466:INFO:Total runtime is 3.5906182765960692 minutes
+2022-08-12 16:58:59,474:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:58:59,474:INFO:Initializing create_model()
+2022-08-12 16:58:59,475:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=prophet, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:58:59,475:INFO:Checking exceptions
+2022-08-12 16:58:59,477:INFO:Importing libraries
+2022-08-12 16:58:59,477:INFO:Copying training dataset
+2022-08-12 16:58:59,480:INFO:Defining folds
+2022-08-12 16:58:59,480:INFO:Declaring metric variables
+2022-08-12 16:58:59,487:INFO:Importing untrained model
+2022-08-12 16:58:59,495:INFO:Prophet Imported successfully
+2022-08-12 16:58:59,511:INFO:Starting cross validation
+2022-08-12 16:58:59,511:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:59:05,793:INFO:Calculating mean and std
+2022-08-12 16:59:05,794:INFO:Creating metrics dataframe
+2022-08-12 16:59:05,821:INFO:Uploading results into container
+2022-08-12 16:59:05,821:INFO:Uploading model into container now
+2022-08-12 16:59:05,821:INFO:master_model_container: 42
+2022-08-12 16:59:05,821:INFO:display_container: 3
+2022-08-12 16:59:05,822:INFO:ProphetPeriodPatched()
+2022-08-12 16:59:05,822:INFO:create_model() successfully completed......................................
+2022-08-12 16:59:06,005:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:59:06,005:INFO:Creating metrics dataframe
+2022-08-12 16:59:06,033:INFO:Initializing Linear w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:59:06,033:INFO:Total runtime is 3.700067639350891 minutes
+2022-08-12 16:59:06,042:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:59:06,042:INFO:Initializing create_model()
+2022-08-12 16:59:06,042:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=lr_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:59:06,042:INFO:Checking exceptions
+2022-08-12 16:59:06,044:INFO:Importing libraries
+2022-08-12 16:59:06,044:INFO:Copying training dataset
+2022-08-12 16:59:06,048:INFO:Defining folds
+2022-08-12 16:59:06,048:INFO:Declaring metric variables
+2022-08-12 16:59:06,055:INFO:Importing untrained model
+2022-08-12 16:59:06,063:INFO:Linear w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:59:06,079:INFO:Starting cross validation
+2022-08-12 16:59:06,080:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:59:06,152:INFO:Calculating mean and std
+2022-08-12 16:59:06,154:INFO:Creating metrics dataframe
+2022-08-12 16:59:06,182:INFO:Uploading results into container
+2022-08-12 16:59:06,182:INFO:Uploading model into container now
+2022-08-12 16:59:06,182:INFO:master_model_container: 43
+2022-08-12 16:59:06,182:INFO:display_container: 3
+2022-08-12 16:59:06,183:INFO:BaseCdsDtForecaster(regressor=LinearRegression(n_jobs=-1), sp=12,
+                    window_length=12)
+2022-08-12 16:59:06,183:INFO:create_model() successfully completed......................................
+2022-08-12 16:59:06,368:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:59:06,368:INFO:Creating metrics dataframe
+2022-08-12 16:59:06,397:INFO:Initializing Elastic Net w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:59:06,397:INFO:Total runtime is 3.706137251853943 minutes
+2022-08-12 16:59:06,406:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:59:06,406:INFO:Initializing create_model()
+2022-08-12 16:59:06,406:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=en_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:59:06,406:INFO:Checking exceptions
+2022-08-12 16:59:06,408:INFO:Importing libraries
+2022-08-12 16:59:06,408:INFO:Copying training dataset
+2022-08-12 16:59:06,411:INFO:Defining folds
+2022-08-12 16:59:06,411:INFO:Declaring metric variables
+2022-08-12 16:59:06,419:INFO:Importing untrained model
+2022-08-12 16:59:06,427:INFO:Elastic Net w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:59:06,443:INFO:Starting cross validation
+2022-08-12 16:59:06,444:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:59:06,507:INFO:Calculating mean and std
+2022-08-12 16:59:06,508:INFO:Creating metrics dataframe
+2022-08-12 16:59:06,541:INFO:Uploading results into container
+2022-08-12 16:59:06,541:INFO:Uploading model into container now
+2022-08-12 16:59:06,541:INFO:master_model_container: 44
+2022-08-12 16:59:06,542:INFO:display_container: 3
+2022-08-12 16:59:06,543:INFO:BaseCdsDtForecaster(regressor=ElasticNet(random_state=123), sp=12,
+                    window_length=12)
+2022-08-12 16:59:06,543:INFO:create_model() successfully completed......................................
+2022-08-12 16:59:06,728:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:59:06,728:INFO:Creating metrics dataframe
+2022-08-12 16:59:06,757:INFO:Initializing Ridge w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:59:06,758:INFO:Total runtime is 3.7121441006660465 minutes
+2022-08-12 16:59:06,766:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:59:06,766:INFO:Initializing create_model()
+2022-08-12 16:59:06,766:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=ridge_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:59:06,766:INFO:Checking exceptions
+2022-08-12 16:59:06,768:INFO:Importing libraries
+2022-08-12 16:59:06,768:INFO:Copying training dataset
+2022-08-12 16:59:06,771:INFO:Defining folds
+2022-08-12 16:59:06,771:INFO:Declaring metric variables
+2022-08-12 16:59:06,779:INFO:Importing untrained model
+2022-08-12 16:59:06,787:INFO:Ridge w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:59:06,803:INFO:Starting cross validation
+2022-08-12 16:59:06,804:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:59:06,859:INFO:Calculating mean and std
+2022-08-12 16:59:06,861:INFO:Creating metrics dataframe
+2022-08-12 16:59:06,887:INFO:Uploading results into container
+2022-08-12 16:59:06,887:INFO:Uploading model into container now
+2022-08-12 16:59:06,887:INFO:master_model_container: 45
+2022-08-12 16:59:06,888:INFO:display_container: 3
+2022-08-12 16:59:06,888:INFO:BaseCdsDtForecaster(regressor=Ridge(random_state=123), sp=12, window_length=12)
+2022-08-12 16:59:06,888:INFO:create_model() successfully completed......................................
+2022-08-12 16:59:07,073:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:59:07,073:INFO:Creating metrics dataframe
+2022-08-12 16:59:07,106:INFO:Initializing Lasso w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:59:07,106:INFO:Total runtime is 3.71794898112615 minutes
+2022-08-12 16:59:07,114:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:59:07,115:INFO:Initializing create_model()
+2022-08-12 16:59:07,115:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=lasso_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:59:07,115:INFO:Checking exceptions
+2022-08-12 16:59:07,117:INFO:Importing libraries
+2022-08-12 16:59:07,117:INFO:Copying training dataset
+2022-08-12 16:59:07,120:INFO:Defining folds
+2022-08-12 16:59:07,120:INFO:Declaring metric variables
+2022-08-12 16:59:07,127:INFO:Importing untrained model
+2022-08-12 16:59:07,137:INFO:Lasso w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:59:07,153:INFO:Starting cross validation
+2022-08-12 16:59:07,154:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:59:07,230:INFO:Calculating mean and std
+2022-08-12 16:59:07,232:INFO:Creating metrics dataframe
+2022-08-12 16:59:07,258:INFO:Uploading results into container
+2022-08-12 16:59:07,258:INFO:Uploading model into container now
+2022-08-12 16:59:07,258:INFO:master_model_container: 46
+2022-08-12 16:59:07,258:INFO:display_container: 3
+2022-08-12 16:59:07,259:INFO:BaseCdsDtForecaster(regressor=Lasso(random_state=123), sp=12, window_length=12)
+2022-08-12 16:59:07,259:INFO:create_model() successfully completed......................................
+2022-08-12 16:59:07,442:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:59:07,442:INFO:Creating metrics dataframe
+2022-08-12 16:59:07,473:INFO:Initializing Least Angular Regressor w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:59:07,473:INFO:Total runtime is 3.724067012468974 minutes
+2022-08-12 16:59:07,482:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:59:07,482:INFO:Initializing create_model()
+2022-08-12 16:59:07,482:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=lar_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:59:07,482:INFO:Checking exceptions
+2022-08-12 16:59:07,484:INFO:Importing libraries
+2022-08-12 16:59:07,484:INFO:Copying training dataset
+2022-08-12 16:59:07,487:INFO:Defining folds
+2022-08-12 16:59:07,487:INFO:Declaring metric variables
+2022-08-12 16:59:07,495:INFO:Importing untrained model
+2022-08-12 16:59:07,503:INFO:Least Angular Regressor w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:59:07,519:INFO:Starting cross validation
+2022-08-12 16:59:07,520:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:59:07,603:INFO:Calculating mean and std
+2022-08-12 16:59:07,604:INFO:Creating metrics dataframe
+2022-08-12 16:59:07,634:INFO:Uploading results into container
+2022-08-12 16:59:07,634:INFO:Uploading model into container now
+2022-08-12 16:59:07,634:INFO:master_model_container: 47
+2022-08-12 16:59:07,634:INFO:display_container: 3
+2022-08-12 16:59:07,635:INFO:BaseCdsDtForecaster(regressor=Lars(random_state=123), sp=12, window_length=12)
+2022-08-12 16:59:07,635:INFO:create_model() successfully completed......................................
+2022-08-12 16:59:07,821:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:59:07,822:INFO:Creating metrics dataframe
+2022-08-12 16:59:07,855:INFO:Initializing Lasso Least Angular Regressor w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:59:07,855:INFO:Total runtime is 3.73043133020401 minutes
+2022-08-12 16:59:07,864:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:59:07,864:INFO:Initializing create_model()
+2022-08-12 16:59:07,864:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=llar_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:59:07,864:INFO:Checking exceptions
+2022-08-12 16:59:07,866:INFO:Importing libraries
+2022-08-12 16:59:07,866:INFO:Copying training dataset
+2022-08-12 16:59:07,870:INFO:Defining folds
+2022-08-12 16:59:07,870:INFO:Declaring metric variables
+2022-08-12 16:59:07,878:INFO:Importing untrained model
+2022-08-12 16:59:07,886:INFO:Lasso Least Angular Regressor w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:59:07,904:INFO:Starting cross validation
+2022-08-12 16:59:07,904:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:59:07,980:INFO:Calculating mean and std
+2022-08-12 16:59:07,981:INFO:Creating metrics dataframe
+2022-08-12 16:59:08,010:INFO:Uploading results into container
+2022-08-12 16:59:08,010:INFO:Uploading model into container now
+2022-08-12 16:59:08,010:INFO:master_model_container: 48
+2022-08-12 16:59:08,011:INFO:display_container: 3
+2022-08-12 16:59:08,012:INFO:BaseCdsDtForecaster(regressor=LassoLars(random_state=123), sp=12,
+                    window_length=12)
+2022-08-12 16:59:08,012:INFO:create_model() successfully completed......................................
+2022-08-12 16:59:08,199:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:59:08,199:INFO:Creating metrics dataframe
+2022-08-12 16:59:08,230:INFO:Initializing Bayesian Ridge w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:59:08,230:INFO:Total runtime is 3.7366817673047383 minutes
+2022-08-12 16:59:08,239:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:59:08,239:INFO:Initializing create_model()
+2022-08-12 16:59:08,239:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=br_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:59:08,239:INFO:Checking exceptions
+2022-08-12 16:59:08,241:INFO:Importing libraries
+2022-08-12 16:59:08,241:INFO:Copying training dataset
+2022-08-12 16:59:08,244:INFO:Defining folds
+2022-08-12 16:59:08,244:INFO:Declaring metric variables
+2022-08-12 16:59:08,251:INFO:Importing untrained model
+2022-08-12 16:59:08,259:INFO:Bayesian Ridge w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:59:08,274:INFO:Starting cross validation
+2022-08-12 16:59:08,275:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:59:08,354:INFO:Calculating mean and std
+2022-08-12 16:59:08,355:INFO:Creating metrics dataframe
+2022-08-12 16:59:08,384:INFO:Uploading results into container
+2022-08-12 16:59:08,385:INFO:Uploading model into container now
+2022-08-12 16:59:08,385:INFO:master_model_container: 49
+2022-08-12 16:59:08,385:INFO:display_container: 3
+2022-08-12 16:59:08,386:INFO:BaseCdsDtForecaster(regressor=BayesianRidge(), sp=12, window_length=12)
+2022-08-12 16:59:08,386:INFO:create_model() successfully completed......................................
+2022-08-12 16:59:08,573:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:59:08,573:INFO:Creating metrics dataframe
+2022-08-12 16:59:08,604:INFO:Initializing Huber w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:59:08,604:INFO:Total runtime is 3.742919154961904 minutes
+2022-08-12 16:59:08,613:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:59:08,613:INFO:Initializing create_model()
+2022-08-12 16:59:08,613:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=huber_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:59:08,613:INFO:Checking exceptions
+2022-08-12 16:59:08,615:INFO:Importing libraries
+2022-08-12 16:59:08,615:INFO:Copying training dataset
+2022-08-12 16:59:08,618:INFO:Defining folds
+2022-08-12 16:59:08,618:INFO:Declaring metric variables
+2022-08-12 16:59:08,626:INFO:Importing untrained model
+2022-08-12 16:59:08,634:INFO:Huber w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:59:08,650:INFO:Starting cross validation
+2022-08-12 16:59:08,651:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:59:08,766:INFO:Calculating mean and std
+2022-08-12 16:59:08,767:INFO:Creating metrics dataframe
+2022-08-12 16:59:08,794:INFO:Uploading results into container
+2022-08-12 16:59:08,795:INFO:Uploading model into container now
+2022-08-12 16:59:08,795:INFO:master_model_container: 50
+2022-08-12 16:59:08,795:INFO:display_container: 3
+2022-08-12 16:59:08,795:INFO:BaseCdsDtForecaster(regressor=HuberRegressor(), sp=12, window_length=12)
+2022-08-12 16:59:08,795:INFO:create_model() successfully completed......................................
+2022-08-12 16:59:08,983:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:59:08,983:INFO:Creating metrics dataframe
+2022-08-12 16:59:09,016:INFO:Initializing Passive Aggressive w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:59:09,017:INFO:Total runtime is 3.7497955799102782 minutes
+2022-08-12 16:59:09,025:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:59:09,026:INFO:Initializing create_model()
+2022-08-12 16:59:09,026:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=par_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:59:09,026:INFO:Checking exceptions
+2022-08-12 16:59:09,028:INFO:Importing libraries
+2022-08-12 16:59:09,028:INFO:Copying training dataset
+2022-08-12 16:59:09,031:INFO:Defining folds
+2022-08-12 16:59:09,031:INFO:Declaring metric variables
+2022-08-12 16:59:09,040:INFO:Importing untrained model
+2022-08-12 16:59:09,048:INFO:Passive Aggressive w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:59:09,063:INFO:Starting cross validation
+2022-08-12 16:59:09,064:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:59:09,131:INFO:Calculating mean and std
+2022-08-12 16:59:09,132:INFO:Creating metrics dataframe
+2022-08-12 16:59:09,160:INFO:Uploading results into container
+2022-08-12 16:59:09,161:INFO:Uploading model into container now
+2022-08-12 16:59:09,161:INFO:master_model_container: 51
+2022-08-12 16:59:09,161:INFO:display_container: 3
+2022-08-12 16:59:09,162:INFO:BaseCdsDtForecaster(regressor=PassiveAggressiveRegressor(random_state=123),
+                    sp=12, window_length=12)
+2022-08-12 16:59:09,162:INFO:create_model() successfully completed......................................
+2022-08-12 16:59:09,347:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:59:09,348:INFO:Creating metrics dataframe
+2022-08-12 16:59:09,381:INFO:Initializing Orthogonal Matching Pursuit w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:59:09,381:INFO:Total runtime is 3.755863527456919 minutes
+2022-08-12 16:59:09,389:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:59:09,389:INFO:Initializing create_model()
+2022-08-12 16:59:09,389:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=omp_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:59:09,390:INFO:Checking exceptions
+2022-08-12 16:59:09,392:INFO:Importing libraries
+2022-08-12 16:59:09,392:INFO:Copying training dataset
+2022-08-12 16:59:09,395:INFO:Defining folds
+2022-08-12 16:59:09,395:INFO:Declaring metric variables
+2022-08-12 16:59:09,403:INFO:Importing untrained model
+2022-08-12 16:59:09,410:INFO:Orthogonal Matching Pursuit w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:59:09,429:INFO:Starting cross validation
+2022-08-12 16:59:09,429:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:59:09,506:INFO:Calculating mean and std
+2022-08-12 16:59:09,507:INFO:Creating metrics dataframe
+2022-08-12 16:59:09,536:INFO:Uploading results into container
+2022-08-12 16:59:09,536:INFO:Uploading model into container now
+2022-08-12 16:59:09,536:INFO:master_model_container: 52
+2022-08-12 16:59:09,536:INFO:display_container: 3
+2022-08-12 16:59:09,537:INFO:BaseCdsDtForecaster(regressor=OrthogonalMatchingPursuit(), sp=12,
+                    window_length=12)
+2022-08-12 16:59:09,537:INFO:create_model() successfully completed......................................
+2022-08-12 16:59:09,721:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:59:09,722:INFO:Creating metrics dataframe
+2022-08-12 16:59:09,755:INFO:Initializing K Neighbors w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:59:09,755:INFO:Total runtime is 3.7621084690093993 minutes
+2022-08-12 16:59:09,764:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:59:09,764:INFO:Initializing create_model()
+2022-08-12 16:59:09,764:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=knn_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:59:09,764:INFO:Checking exceptions
+2022-08-12 16:59:09,766:INFO:Importing libraries
+2022-08-12 16:59:09,766:INFO:Copying training dataset
+2022-08-12 16:59:09,770:INFO:Defining folds
+2022-08-12 16:59:09,770:INFO:Declaring metric variables
+2022-08-12 16:59:09,778:INFO:Importing untrained model
+2022-08-12 16:59:09,786:INFO:K Neighbors w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:59:09,802:INFO:Starting cross validation
+2022-08-12 16:59:09,802:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:59:09,899:INFO:Calculating mean and std
+2022-08-12 16:59:09,900:INFO:Creating metrics dataframe
+2022-08-12 16:59:09,927:INFO:Uploading results into container
+2022-08-12 16:59:09,927:INFO:Uploading model into container now
+2022-08-12 16:59:09,927:INFO:master_model_container: 53
+2022-08-12 16:59:09,927:INFO:display_container: 3
+2022-08-12 16:59:09,928:INFO:BaseCdsDtForecaster(regressor=KNeighborsRegressor(n_jobs=-1), sp=12,
+                    window_length=12)
+2022-08-12 16:59:09,928:INFO:create_model() successfully completed......................................
+2022-08-12 16:59:10,114:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:59:10,115:INFO:Creating metrics dataframe
+2022-08-12 16:59:10,149:INFO:Initializing Decision Tree w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:59:10,149:INFO:Total runtime is 3.7686720530192055 minutes
+2022-08-12 16:59:10,158:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:59:10,159:INFO:Initializing create_model()
+2022-08-12 16:59:10,159:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=dt_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:59:10,159:INFO:Checking exceptions
+2022-08-12 16:59:10,161:INFO:Importing libraries
+2022-08-12 16:59:10,161:INFO:Copying training dataset
+2022-08-12 16:59:10,164:INFO:Defining folds
+2022-08-12 16:59:10,164:INFO:Declaring metric variables
+2022-08-12 16:59:10,172:INFO:Importing untrained model
+2022-08-12 16:59:10,180:INFO:Decision Tree w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:59:10,196:INFO:Starting cross validation
+2022-08-12 16:59:10,197:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:59:10,276:INFO:Calculating mean and std
+2022-08-12 16:59:10,277:INFO:Creating metrics dataframe
+2022-08-12 16:59:10,304:INFO:Uploading results into container
+2022-08-12 16:59:10,304:INFO:Uploading model into container now
+2022-08-12 16:59:10,304:INFO:master_model_container: 54
+2022-08-12 16:59:10,305:INFO:display_container: 3
+2022-08-12 16:59:10,306:INFO:BaseCdsDtForecaster(regressor=DecisionTreeRegressor(random_state=123), sp=12,
+                    window_length=12)
+2022-08-12 16:59:10,306:INFO:create_model() successfully completed......................................
+2022-08-12 16:59:10,493:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:59:10,493:INFO:Creating metrics dataframe
+2022-08-12 16:59:10,530:INFO:Initializing Random Forest w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:59:10,530:INFO:Total runtime is 3.775016899903615 minutes
+2022-08-12 16:59:10,539:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:59:10,539:INFO:Initializing create_model()
+2022-08-12 16:59:10,539:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=rf_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:59:10,539:INFO:Checking exceptions
+2022-08-12 16:59:10,541:INFO:Importing libraries
+2022-08-12 16:59:10,541:INFO:Copying training dataset
+2022-08-12 16:59:10,544:INFO:Defining folds
+2022-08-12 16:59:10,544:INFO:Declaring metric variables
+2022-08-12 16:59:10,553:INFO:Importing untrained model
+2022-08-12 16:59:10,561:INFO:Random Forest w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:59:10,577:INFO:Starting cross validation
+2022-08-12 16:59:10,577:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:59:10,902:INFO:Calculating mean and std
+2022-08-12 16:59:10,903:INFO:Creating metrics dataframe
+2022-08-12 16:59:10,930:INFO:Uploading results into container
+2022-08-12 16:59:10,930:INFO:Uploading model into container now
+2022-08-12 16:59:10,930:INFO:master_model_container: 55
+2022-08-12 16:59:10,930:INFO:display_container: 3
+2022-08-12 16:59:10,932:INFO:BaseCdsDtForecaster(regressor=RandomForestRegressor(n_jobs=-1,
+                                                    random_state=123),
+                    sp=12, window_length=12)
+2022-08-12 16:59:10,932:INFO:create_model() successfully completed......................................
+2022-08-12 16:59:11,115:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:59:11,115:INFO:Creating metrics dataframe
+2022-08-12 16:59:11,149:INFO:Initializing Extra Trees w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:59:11,149:INFO:Total runtime is 3.7853357036908464 minutes
+2022-08-12 16:59:11,157:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:59:11,158:INFO:Initializing create_model()
+2022-08-12 16:59:11,158:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=et_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:59:11,158:INFO:Checking exceptions
+2022-08-12 16:59:11,159:INFO:Importing libraries
+2022-08-12 16:59:11,160:INFO:Copying training dataset
+2022-08-12 16:59:11,163:INFO:Defining folds
+2022-08-12 16:59:11,163:INFO:Declaring metric variables
+2022-08-12 16:59:11,171:INFO:Importing untrained model
+2022-08-12 16:59:11,179:INFO:Extra Trees w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:59:11,195:INFO:Starting cross validation
+2022-08-12 16:59:11,195:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:59:11,512:INFO:Calculating mean and std
+2022-08-12 16:59:11,514:INFO:Creating metrics dataframe
+2022-08-12 16:59:11,543:INFO:Uploading results into container
+2022-08-12 16:59:11,543:INFO:Uploading model into container now
+2022-08-12 16:59:11,543:INFO:master_model_container: 56
+2022-08-12 16:59:11,543:INFO:display_container: 3
+2022-08-12 16:59:11,544:INFO:BaseCdsDtForecaster(regressor=ExtraTreesRegressor(n_jobs=-1, random_state=123),
+                    sp=12, window_length=12)
+2022-08-12 16:59:11,545:INFO:create_model() successfully completed......................................
+2022-08-12 16:59:11,729:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:59:11,729:INFO:Creating metrics dataframe
+2022-08-12 16:59:11,763:INFO:Initializing Gradient Boosting w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:59:11,763:INFO:Total runtime is 3.7955649177233375 minutes
+2022-08-12 16:59:11,771:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:59:11,771:INFO:Initializing create_model()
+2022-08-12 16:59:11,771:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=gbr_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:59:11,772:INFO:Checking exceptions
+2022-08-12 16:59:11,773:INFO:Importing libraries
+2022-08-12 16:59:11,773:INFO:Copying training dataset
+2022-08-12 16:59:11,777:INFO:Defining folds
+2022-08-12 16:59:11,777:INFO:Declaring metric variables
+2022-08-12 16:59:11,784:INFO:Importing untrained model
+2022-08-12 16:59:11,792:INFO:Gradient Boosting w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:59:11,808:INFO:Starting cross validation
+2022-08-12 16:59:11,809:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:59:11,972:INFO:Calculating mean and std
+2022-08-12 16:59:11,974:INFO:Creating metrics dataframe
+2022-08-12 16:59:12,000:INFO:Uploading results into container
+2022-08-12 16:59:12,000:INFO:Uploading model into container now
+2022-08-12 16:59:12,001:INFO:master_model_container: 57
+2022-08-12 16:59:12,001:INFO:display_container: 3
+2022-08-12 16:59:12,002:INFO:BaseCdsDtForecaster(regressor=GradientBoostingRegressor(random_state=123),
+                    sp=12, window_length=12)
+2022-08-12 16:59:12,002:INFO:create_model() successfully completed......................................
+2022-08-12 16:59:12,187:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:59:12,187:INFO:Creating metrics dataframe
+2022-08-12 16:59:12,221:INFO:Initializing AdaBoost w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:59:12,221:INFO:Total runtime is 3.8032037854194636 minutes
+2022-08-12 16:59:12,230:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:59:12,230:INFO:Initializing create_model()
+2022-08-12 16:59:12,230:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=ada_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:59:12,230:INFO:Checking exceptions
+2022-08-12 16:59:12,232:INFO:Importing libraries
+2022-08-12 16:59:12,232:INFO:Copying training dataset
+2022-08-12 16:59:12,235:INFO:Defining folds
+2022-08-12 16:59:12,235:INFO:Declaring metric variables
+2022-08-12 16:59:12,243:INFO:Importing untrained model
+2022-08-12 16:59:12,251:INFO:AdaBoost w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:59:12,266:INFO:Starting cross validation
+2022-08-12 16:59:12,267:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:59:12,475:INFO:Calculating mean and std
+2022-08-12 16:59:12,476:INFO:Creating metrics dataframe
+2022-08-12 16:59:12,507:INFO:Uploading results into container
+2022-08-12 16:59:12,508:INFO:Uploading model into container now
+2022-08-12 16:59:12,508:INFO:master_model_container: 58
+2022-08-12 16:59:12,508:INFO:display_container: 3
+2022-08-12 16:59:12,509:INFO:BaseCdsDtForecaster(regressor=AdaBoostRegressor(random_state=123), sp=12,
+                    window_length=12)
+2022-08-12 16:59:12,509:INFO:create_model() successfully completed......................................
+2022-08-12 16:59:12,693:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:59:12,693:INFO:Creating metrics dataframe
+2022-08-12 16:59:12,727:INFO:Initializing Extreme Gradient Boosting w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:59:12,727:INFO:Total runtime is 3.8116292238235467 minutes
+2022-08-12 16:59:12,735:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:59:12,735:INFO:Initializing create_model()
+2022-08-12 16:59:12,736:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=xgboost_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:59:12,736:INFO:Checking exceptions
+2022-08-12 16:59:12,737:INFO:Importing libraries
+2022-08-12 16:59:12,737:INFO:Copying training dataset
+2022-08-12 16:59:12,740:INFO:Defining folds
+2022-08-12 16:59:12,741:INFO:Declaring metric variables
+2022-08-12 16:59:12,748:INFO:Importing untrained model
+2022-08-12 16:59:12,757:INFO:Extreme Gradient Boosting w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:59:12,773:INFO:Starting cross validation
+2022-08-12 16:59:12,773:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:59:38,162:INFO:Calculating mean and std
+2022-08-12 16:59:38,164:INFO:Creating metrics dataframe
+2022-08-12 16:59:38,194:INFO:Uploading results into container
+2022-08-12 16:59:38,194:INFO:Uploading model into container now
+2022-08-12 16:59:38,194:INFO:master_model_container: 59
+2022-08-12 16:59:38,194:INFO:display_container: 3
+2022-08-12 16:59:38,199:INFO:BaseCdsDtForecaster(regressor=XGBRegressor(base_score=None, booster='gbtree',
+                                           callbacks=None,
+                                           colsample_bylevel=None,
+                                           colsample_bynode=None,
+                                           colsample_bytree=None,
+                                           early_stopping_rounds=None,
+                                           enable_categorical=False,
+                                           eval_metric=None, gamma=None,
+                                           gpu_id=None, grow_policy=None,
+                                           importance_type=None,
+                                           interaction_constraints=None,
+                                           learning_rate=None, max_bin=None,
+                                           max_cat_to_onehot=None,
+                                           max_delta_step=None, max_depth=None,
+                                           max_leaves=None,
+                                           min_child_weight=None, missing=nan,
+                                           monotone_constraints=None,
+                                           n_estimators=100, n_jobs=-1,
+                                           num_parallel_tree=None,
+                                           predictor=None, random_state=123,
+                                           reg_alpha=None, reg_lambda=None, ...),
+                    sp=12, window_length=12)
+2022-08-12 16:59:38,199:INFO:create_model() successfully completed......................................
+2022-08-12 16:59:38,384:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:59:38,384:INFO:Creating metrics dataframe
+2022-08-12 16:59:38,419:INFO:Initializing Light Gradient Boosting w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:59:38,419:INFO:Total runtime is 4.2398289481798805 minutes
+2022-08-12 16:59:38,427:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:59:38,428:INFO:Initializing create_model()
+2022-08-12 16:59:38,428:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=lightgbm_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:59:38,428:INFO:Checking exceptions
+2022-08-12 16:59:38,430:INFO:Importing libraries
+2022-08-12 16:59:38,430:INFO:Copying training dataset
+2022-08-12 16:59:38,433:INFO:Defining folds
+2022-08-12 16:59:38,433:INFO:Declaring metric variables
+2022-08-12 16:59:38,441:INFO:Importing untrained model
+2022-08-12 16:59:38,449:INFO:Light Gradient Boosting w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:59:38,465:INFO:Starting cross validation
+2022-08-12 16:59:38,466:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:59:38,574:INFO:Calculating mean and std
+2022-08-12 16:59:38,575:INFO:Creating metrics dataframe
+2022-08-12 16:59:38,603:INFO:Uploading results into container
+2022-08-12 16:59:38,603:INFO:Uploading model into container now
+2022-08-12 16:59:38,603:INFO:master_model_container: 60
+2022-08-12 16:59:38,603:INFO:display_container: 3
+2022-08-12 16:59:38,605:INFO:BaseCdsDtForecaster(regressor=LGBMRegressor(random_state=123), sp=12,
+                    window_length=12)
+2022-08-12 16:59:38,605:INFO:create_model() successfully completed......................................
+2022-08-12 16:59:38,791:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:59:38,791:INFO:Creating metrics dataframe
+2022-08-12 16:59:38,827:INFO:Initializing CatBoost Regressor w/ Cond. Deseasonalize & Detrending
+2022-08-12 16:59:38,827:INFO:Total runtime is 4.246632345517476 minutes
+2022-08-12 16:59:38,835:INFO:SubProcess create_model() called ==================================
+2022-08-12 16:59:38,836:INFO:Initializing create_model()
+2022-08-12 16:59:38,836:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=catboost_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.Display.Display object at 0x7fa509a0ac40>, kwargs={})
+2022-08-12 16:59:38,836:INFO:Checking exceptions
+2022-08-12 16:59:38,838:INFO:Importing libraries
+2022-08-12 16:59:38,838:INFO:Copying training dataset
+2022-08-12 16:59:38,841:INFO:Defining folds
+2022-08-12 16:59:38,841:INFO:Declaring metric variables
+2022-08-12 16:59:38,849:INFO:Importing untrained model
+2022-08-12 16:59:38,857:INFO:CatBoost Regressor w/ Cond. Deseasonalize & Detrending Imported successfully
+2022-08-12 16:59:38,873:INFO:Starting cross validation
+2022-08-12 16:59:38,874:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 16:59:43,531:INFO:Calculating mean and std
+2022-08-12 16:59:43,532:INFO:Creating metrics dataframe
+2022-08-12 16:59:43,558:INFO:Uploading results into container
+2022-08-12 16:59:43,558:INFO:Uploading model into container now
+2022-08-12 16:59:43,558:INFO:master_model_container: 61
+2022-08-12 16:59:43,558:INFO:display_container: 3
+2022-08-12 16:59:43,559:INFO:BaseCdsDtForecaster(regressor=<catboost.core.CatBoostRegressor object at 0x7fa4ed264b50>,
+                    sp=12, window_length=12)
+2022-08-12 16:59:43,559:INFO:create_model() successfully completed......................................
+2022-08-12 16:59:43,744:INFO:SubProcess create_model() end ==================================
+2022-08-12 16:59:43,744:INFO:Creating metrics dataframe
+2022-08-12 16:59:43,797:INFO:Initializing create_model()
+2022-08-12 16:59:43,797:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=ExponentialSmoothing(seasonal='mul', sp=12, trend='add'), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, kwargs={})
+2022-08-12 16:59:43,797:INFO:Checking exceptions
+2022-08-12 16:59:43,799:INFO:Importing libraries
+2022-08-12 16:59:43,799:INFO:Copying training dataset
+2022-08-12 16:59:43,802:INFO:Defining folds
+2022-08-12 16:59:43,802:INFO:Declaring metric variables
+2022-08-12 16:59:43,802:INFO:Importing untrained model
+2022-08-12 16:59:43,802:INFO:Declaring custom model
+2022-08-12 16:59:43,803:INFO:Exponential Smoothing Imported successfully
+2022-08-12 16:59:43,803:INFO:Cross validation set to False
+2022-08-12 16:59:43,803:INFO:Fitting Model
+2022-08-12 16:59:44,015:INFO:ExponentialSmoothing(seasonal='mul', sp=12, trend='add')
+2022-08-12 16:59:44,015:INFO:create_models() successfully completed......................................
+2022-08-12 16:59:44,253:INFO:master_model_container: 61
+2022-08-12 16:59:44,253:INFO:display_container: 3
+2022-08-12 16:59:44,253:INFO:ExponentialSmoothing(seasonal='mul', sp=12, trend='add')
+2022-08-12 16:59:44,253:INFO:compare_models() successfully completed......................................
+2022-08-12 17:00:14,590:WARNING:predict_model >> Prediction Indices do not match test indices. Metrics will not be displayed.
+2022-08-12 17:00:15,091:INFO:Visual Rendered Successfully
+2022-08-12 17:00:24,738:WARNING:predict_model >> Prediction Indices do not match test indices. Metrics will not be displayed.
+2022-08-12 17:00:25,438:INFO:Visual Rendered Successfully
+2022-08-12 17:00:37,485:WARNING:predict_model >> Prediction Indices do not match test indices. Metrics will not be displayed.
+2022-08-12 17:00:37,823:INFO:Visual Rendered Successfully
+2022-08-12 17:00:43,911:INFO:Initializing finalize_model()
+2022-08-12 17:00:43,911:INFO:finalize_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=ExponentialSmoothing(seasonal='mul', sp=12, trend='add'), fit_kwargs=None, groups=None, model_only=True, experiment_custom_tags=None, display=None)
+2022-08-12 17:00:43,917:INFO:Finalizing ExponentialSmoothing(seasonal='mul', sp=12, trend='add')
+2022-08-12 17:00:43,920:INFO:Initializing create_model()
+2022-08-12 17:00:43,920:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7fa509d1d820>, estimator=ExponentialSmoothing(seasonal='mul', sp=12, trend='add'), fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, kwargs={})
+2022-08-12 17:00:43,920:INFO:Checking exceptions
+2022-08-12 17:00:43,922:INFO:Importing libraries
+2022-08-12 17:00:43,922:INFO:Copying training dataset
+2022-08-12 17:00:43,924:INFO:Defining folds
+2022-08-12 17:00:43,924:INFO:Declaring metric variables
+2022-08-12 17:00:43,924:INFO:Importing untrained model
+2022-08-12 17:00:43,924:INFO:Declaring custom model
+2022-08-12 17:00:43,925:INFO:Exponential Smoothing Imported successfully
+2022-08-12 17:00:43,925:INFO:Starting cross validation
+2022-08-12 17:00:43,926:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3], dtype='int64', is_relative=True),
+            initial_window=None, step_length=3), n_jobs=-1
+2022-08-12 17:00:44,237:INFO:Calculating mean and std
+2022-08-12 17:00:44,238:INFO:Creating metrics dataframe
+2022-08-12 17:00:44,270:INFO:Finalizing model
+2022-08-12 17:00:44,474:INFO:Uploading results into container
+2022-08-12 17:00:44,474:INFO:master_model_container: 61
+2022-08-12 17:00:44,474:INFO:display_container: 7
+2022-08-12 17:00:44,475:INFO:ExponentialSmoothing(seasonal='mul', sp=12, trend='add')
+2022-08-12 17:00:44,475:INFO:create_model() successfully completed......................................
+2022-08-12 17:00:44,688:INFO:master_model_container: 61
+2022-08-12 17:00:44,689:INFO:display_container: 6
+2022-08-12 17:00:44,689:INFO:ExponentialSmoothing(seasonal='mul', sp=12, trend='add')
+2022-08-12 17:00:44,689:INFO:finalize_model() succesfully completed......................................
+2022-08-12 17:00:44,914:WARNING:predict_model >> Prediction Indices do not match test indices. Metrics will not be displayed.
